@@ -1,3 +1,40 @@
-body {
-  visibility: visible;
-}
+//fonts
+@import "./fonts.scss";
+//other
+@import "./contacts.scss";
+@import "./copyright.scss";
+@import "./main-footer";
+@import "./main-header";
+@import "./main-nav";
+@import "./page";
+@import "./site-list";
+@import "./social";
+@import "./main-container.scss";
+//index
+@import "./index-style/before-after-list.scss";
+@import "./index-style/before-after.scss";
+@import "./index-style/comparison.scss";
+@import "./index-style/offer-content-list.scss";
+@import "./index-style/offer-content.scss";
+@import "./index-style/offer.scss";
+@import "./index-style/range.scss";
+@import "./index-style/work-list.scss";
+@import "./index-style/work.scss";
+//form
+@import "./form-style/checkbox.scss";
+@import "./form-style/comment.scss";
+@import "./form-style/contact.scss";
+@import "./form-style/control.scss";
+@import "./form-style/form-headline.scss";
+@import "./form-style/form.scss";
+@import "./form-style/name-weight-age.scss";
+@import "./form-style/radio-button.scss";
+//catalog
+@import "./catalog-style/additional-products-list.scss";
+@import "./catalog-style/additional-products.scss";
+@import "./catalog-style/catalog.scss";
+@import "./catalog-style/container-catalog.scss";
+@import "./catalog-style/description-table.scss";
+@import "./catalog-style/gift.scss";
+@import "./catalog-style/product-info.scss";
+@import "./catalog-style/show-all.scss";
