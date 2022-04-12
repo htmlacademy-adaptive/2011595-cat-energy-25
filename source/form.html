@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -20,18 +20,18 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <ul class="main-nav-list">
-        <li class="main-nav-list__item">
+      <ul class="site-list">
+        <li class="site-list__item">
           <a href="index.html">
             Главная
           </a>
         </li>
-        <li class="main-nav-list__item site-list__item--active">
+        <li class="site-list__item site-list__item--active">
           <a>
             Каталог продукции
           </a>
         </li>
-        <li class="main-nav-list__item">
+        <li class="site-list__item">
           <a href="form.html">
             Подбор программы
           </a>
@@ -42,20 +42,20 @@
   <main class="main-container">
     <section class="form-headline">
       <h1 class="form-headline__title">Подбор программы</h1>
-      <span class="form-headline__offer">Заполните анкету, и мы подберем<br>программу питания для
-        вашего кота</span>
+      <p class="form-headline__offer">Заполните анкету, и мы подберем<br>программу питания для
+        вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form__field-name-weight-age name-weight-age">
           <label class="name-weight-age__name">
-            <span class="name-weight-age__text">Имя:*</span>
+            <p class="name-weight-age__text">Имя:*</p>
             <input class="name-weight-age__input" type="text" placeholder="БАРСИК" name="cat-name" required>
           </label>
           <label class="name-weight-age__weight">
-            <span class="name-weight-age__text">Вес(кг):*</span>
+            <p class="name-weight-age__text">Вес(кг):*</p>
             <input class="name-weight-age__input" type="text" placeholder="7" name="cat-weight" required>
           </label>
           <label class="name-weight-age__age">
-            <span class="name-weight-age__text">Возраст(лет):</span>
+            <p class="name-weight-age__text">Возраст(лет):</p>
             <input class="name-weight-age__input" type="text" name="cat-age" placeholder="7">
           </label>
         </fieldset>
@@ -65,21 +65,21 @@
               <label class="control">
                 <input class="control__input" type="radio" name="target-group" value="weight-loss" checked>
                 <span class="control__mark"></span>
-                <span class="control__label">Похудение</span>
+                <p class="control__label">Похудение</p>
               </label>
             </li>
             <li class="radio-button__weight-gain">
               <label class="control">
                 <input class="control__input" type="radio" name="target-group" value="weight-gain">
                 <span class="control__mark"></span>
-                <span class="control__label">Набор массы</span>
+                <p class="control__label">Набор массы</p>
               </label>
             </li>
             <li class="radio-button__need-help">
               <label class="control">
                 <input class="control__input" type="radio" name="target-group" value="need-help">
                 <span class="control__mark"></span>
-                <span class="control__label">Не знаю (нужен ваш совет)</span>
+                <p class="control__label">Не знаю (нужен ваш совет)</p>
               </label>
             </li>
           </ul>
@@ -87,11 +87,11 @@
         <fieldset class="form__contact contact">
           <legend class="contact__title">Контактные данные<br>(владельца кота)</legend>
           <label class="contact__email">
-            <span class="contact__text">E-MAIL:*</span>
+            <p class="contact__text">E-MAIL:*</p>
             <input class="contact__input" type="email" placeholder="kuklachev@gmail.com" name="email" required>
           </label>
           <label class="contact__nomber">
-            <span class="name-weight-age__text">Телефон:*</span>
+            <p class="name-weight-age__text">Телефон:*</p>
             <input class="name-weight-age__input" type="tel" placeholder="8 (960) 900-60-90" name="phone-nomber"
               pattern="[0-9]{1} [\(][0-9]{3}[\)] [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
           </label>
@@ -106,41 +106,41 @@
               <label class="control">
                 <input class="control__input" type="checkbox" name="sweetener" checked>
                 <span class="control__mark"></span>
-                <span class="control__label">Сахарозаменитель</span>
+                <p class="control__label">Сахарозаменитель</p>
               </label>
             </li>
             <li class="checkbox__water">
               <label class="control">
                 <input class="control__input" type="checkbox" name="water">
                 <span class="control__mark"></span>
-                <span class="control__label">Питьевая вода</span>
+                <p class="control__label">Питьевая вода</p>
               </label>
             </li>
             <li class="checkbox__milk">
               <label class="control">
                 <input class="control__input" type="checkbox" name="milk">
                 <span class="control__mark"></span>
-                <span class="control__label">Молоко</span>
+                <p class="control__label">Молоко</p>
               </label>
             </li>
             <li class="checkbox__vitamins">
               <label class="control">
                 <input class="control__input" type="checkbox" name="vitamins">
                 <span class="control__mark"></span>
-                <span class="control__label">Витамины</span>
+                <p class="control__label">Витамины</p>
               </label>
             </li>
           </ul>
         </fieldset>
         <button class="form__button button" type="submit"><span class="button__text">Отправить заявку</span></button>
-        <span class="form__required">* — Обязательные поля</span>
+        <p class="form__required">* — Обязательные поля</p>
       </form>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Наш адрес.</h2>
       <div class="contacts__wrapper">
-        <span class="contacts__title">Приглашаем <br>к сотрудничеству<br>дилеров!</span>
-        <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</span>
+        <p class="contacts__title">Приглашаем <br>к сотрудничеству<br>дилеров!</p>
+        <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
       <img class="contacts__map-google" src="./img/large-pic/location-mobile.jpg" alt="Карта с расположением магазина.">
     </section>
@@ -153,17 +153,17 @@
     <ul class="main-footer__social social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Мы в Вконтакте.</span>
+          <p class="visually-hidden">Мы в Вконтакте.</p>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Мы в Ютубе.</span>
+          <p class="visually-hidden">Мы в Ютубе.</p>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Мы в Телеграме.</span>
+          <p class="visually-hidden">Мы в Телеграме.</p>
         </a>
       </li>
     </ul>
