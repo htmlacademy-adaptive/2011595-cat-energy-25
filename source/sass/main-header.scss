@@ -1,15 +1,24 @@
 .main-header {
-
+  box-sizing: border-box;
+  background-color: $white;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 20px 17px 20px;
 }
 
 .main-header__logo {
-
+  align-self: center;
 }
 
 .main-header__logo-image {
-
+  width: 33px;
+  height: 38px;
 }
 
 .main-header__logo-text {
-
+  width: 101px;
+  height: 18px;
 }

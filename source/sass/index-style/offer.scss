@@ -1,16 +1,49 @@
 .offer {
-
+  position: relative;
+  background-color: $white;
+  padding-top: 27px;
+  z-index: 1;
 }
 
 .offer__title {
-
+  margin: 0px 0px 25px 0px;
+  padding: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 302px;
+    width: 320px;
+    background-image: url(../../img/background/offer-background-mobile.jpg);
+    background-color: $green;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0;
+}
 }
 
 .offer__intro {
-
+  margin: 0px 0px 29px 0px;
+  padding: 0;
 }
 
 .offer__button {
-
+  text-decoration: none;
+  color: $white;
+  background-color: $green;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  width: 320px;
+  display: block;
+  padding: 10px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
+.offer__image {
+  display: block;
+  margin: 0 auto;
+  height: 270px;
+
+}
