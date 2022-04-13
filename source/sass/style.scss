@@ -1,16 +1,18 @@
+//Global
+@import "./global.scss";
 //fonts
 @import "./fonts.scss";
 //other
 @import "./contacts.scss";
 @import "./copyright.scss";
-@import "./main-footer";
-@import "./main-header";
-@import "./main-nav";
-@import "./page";
-@import "./site-list";
-@import "./social";
-@import "./main-container.scss";
+@import "./main-footer.scss";
+@import "./main-header.scss";
+@import "./main-nav.scss";
+@import "./page.scss";
+@import "./site-list.scss";
+@import "./social.scss";
 //index
+@import "./index-style/main-container";
 @import "./index-style/before-after-list.scss";
 @import "./index-style/before-after.scss";
 @import "./index-style/comparison.scss";
@@ -21,14 +23,9 @@
 @import "./index-style/work-list.scss";
 @import "./index-style/work.scss";
 //form
-@import "./form-style/checkbox.scss";
-@import "./form-style/comment.scss";
-@import "./form-style/contact.scss";
 @import "./form-style/control.scss";
 @import "./form-style/form-headline.scss";
 @import "./form-style/form.scss";
-@import "./form-style/name-weight-age.scss";
-@import "./form-style/radio-button.scss";
 //catalog
 @import "./catalog-style/additional-products-list.scss";
 @import "./catalog-style/additional-products.scss";
