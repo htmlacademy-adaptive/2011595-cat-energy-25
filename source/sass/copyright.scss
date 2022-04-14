@@ -1,9 +1,11 @@
 .copyright {
-
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright__link {
-
+  text-decoration: none;
 }
 
 .copyright__link-logo {

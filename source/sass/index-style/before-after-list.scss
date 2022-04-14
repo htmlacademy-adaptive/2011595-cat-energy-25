@@ -1,9 +1,23 @@
 .before-after-list {
-
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .before-after-list__item {
-
+  display: flex;
+  flex-direction: column;
+  width: 124px;
+  height: 56px;
+  padding: 14px 20px 17px 20px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .before-after-list__value {
@@ -11,6 +25,6 @@
 }
 
 .before-after-list__title {
-
+  margin-top: 8px;
 }
 
