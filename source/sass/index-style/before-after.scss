@@ -1,5 +1,7 @@
 .before-after {
-
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #eaeaea;
 }
 
 .before-after__half {
@@ -7,15 +9,18 @@
 }
 
 .before-after__title {
-
+  margin: 0 0 40px 0;
+  padding: 0;
 }
 
 .before-after__text {
-
+  margin: 0 0 20px 0;
 }
 
 .before-after__price {
-
+  margin: 0 0 40px 0;
+  padding: 0;
+  text-align: center;
 }
 
 .before-after__price-item {

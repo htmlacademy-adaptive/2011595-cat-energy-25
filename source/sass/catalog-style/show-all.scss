@@ -1,15 +1,26 @@
 .show-all {
-
+  margin-top: 78px;
 }
 
 .show-all__title {
-
+  margin: 0 0 8px 0;
 }
 
 .show-all__description {
-
+  margin: 0 0 21px 0;
 }
 
 .show-all__order {
-
+  text-decoration: none;
+  color: $dark-grey;
+  background-color: $grey;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  width: 280px;
+  display: block;
+  padding: 10px;
+  height: 40px;
+  box-sizing: border-box;
+  flex-grow: 3;
 }

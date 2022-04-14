@@ -10,13 +10,7 @@
 .offer-content-list__item {
   padding: 30px 20px 18px 20px;
   background-color: $grey;
-  &--slim {
-
-  }
-
-  &--power {
-
-  }
+  display: block;
 }
 
 .offer-content-list__title {
@@ -37,7 +31,7 @@
   color: $black;
 }
 
-.offer-content-list__item--slim {
+  .offer-content-list__item--slim {
   position: relative;
   &::before {
     content: "";
@@ -50,7 +44,7 @@
   }
 }
 
-.offer-content-list__item--power {
+  .offer-content-list__item--power {
   position: relative;
   &::before {
     content: "";

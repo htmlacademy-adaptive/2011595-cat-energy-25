@@ -3,18 +3,24 @@
 }
 
 .contacts__wrapper {
-
+  padding: 26px 0 26px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__title {
-
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__address {
-
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__map-google {
-
+  position: relative;
+  left: -20px;
+  display: block;
 }
 

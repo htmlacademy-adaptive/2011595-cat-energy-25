@@ -18,6 +18,8 @@
     background-repeat: no-repeat;
     z-index: -1;
     top: 0;
+    box-sizing: border-box;
+    left: -20px;
 }
 }
 
@@ -33,7 +35,7 @@
   text-transform: uppercase;
   border: none;
   text-align: center;
-  width: 320px;
+  width: 280px;
   display: block;
   padding: 10px;
   height: 40px;

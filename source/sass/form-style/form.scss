@@ -74,28 +74,19 @@
 
 }
 
-.form__checkbox {
-
-}
-
-.form__checkbox-sweetener {
-
-}
-
-.form__checkbox-water {
-
-}
-
-.form__checkbox-milk {
-
-}
-
-.form__checkbox-vitamins {
-
-}
-
 .form__button {
-
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  width: 280px;
+  display: block;
+  padding: 10px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 0;
 }
 
 .form__required {
