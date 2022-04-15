@@ -7,34 +7,3 @@
   flex-direction: column;
 }
 
-.additional-products-list__item {
-  border-top: 1px solid #cdcdcd;
-  display: flex;
-  flex-direction: column;
-  padding: 13px 0 19px 0;
-}
-
-.additional-products-list__title {
-  margin: 0;
-}
-
-.additional-products-list__count {
-  margin: 0;
-}
-
-.additional-products-list__price {
-}
-
-.additional-products-list__order {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #68b738;
-  text-transform: uppercase;
-  border: none;
-  text-align: center;
-  width: 280px;
-  display: block;
-  padding: 10px;
-  height: 40px;
-  box-sizing: border-box;
-}

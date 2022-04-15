@@ -29,5 +29,22 @@
   height: 40px;
   box-sizing: border-box;
   flex-grow: 3;
+  &--show-all {
+    color: $dark-grey;
+    background-color: $grey;
+  }
+}
+
+.catalog-item__title {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item__title-all {
+  margin: 0 0 8px 0;
+}
+.catalog-item__description {
+  margin: 0 0 21px 0;
 }
 

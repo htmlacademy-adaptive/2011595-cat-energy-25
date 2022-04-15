@@ -23,18 +23,19 @@
 @import "./index-style/work-list.scss";
 @import "./index-style/work.scss";
 //form
-@import "./form-style/control.scss";
 @import "./form-style/form-headline.scss";
 @import "./form-style/form.scss";
 @import "./form-style/radio-button.scss";
 @import "./form-style/checkbox.scss";
+@import "./form-style/radio-checkbox-control";
+@import "./form-style/checkbox-control.scss";
 //catalog
+@import "./catalog-style/additional-products-list-item.scss";
 @import "./catalog-style/additional-products-list.scss";
 @import "./catalog-style/additional-products.scss";
 @import "./catalog-style/catalog.scss";
 @import "./catalog-style/container-catalog.scss";
 @import "./catalog-style/description-table.scss";
 @import "./catalog-style/gift.scss";
-@import "./catalog-style/product-info.scss";
 @import "./catalog-style/show-all.scss";
 @import "./catalog-style/catalog-item.scss";
