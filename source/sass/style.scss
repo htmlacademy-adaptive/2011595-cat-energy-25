@@ -1,41 +1,43 @@
-//Global
-@import "./global.scss";
-//fonts
 @import "./fonts.scss";
+@import "./global.scss";
+//catalog
+@import "./catalog-style/additional-products-list-item.scss";
+@import "./catalog-style/additional-products-list.scss";
+@import "./catalog-style/additional-products.scss";
+@import "./catalog-style/catalog-item.scss";
+@import "./catalog-style/catalog.scss";
+@import "./catalog-style/container-catalog.scss";
+@import "./catalog-style/description-table.scss";
+@import "./catalog-style/gift.scss";
+@import "./catalog-style/show-all.scss";
 //other
 @import "./contacts.scss";
 @import "./copyright.scss";
-@import "./main-footer.scss";
-@import "./main-header.scss";
-@import "./main-nav.scss";
-@import "./page.scss";
-@import "./site-list.scss";
-@import "./social.scss";
-//index
-@import "./index-style/main-container";
+@import "./form-style/checkbox-control.scss";
+@import "./form-style/checkbox.scss";
+@import "./form-style/form-headline.scss";
+@import "./form-style/form.scss";
+@import "./form-style/radio-button.scss";
+@import "./form-style/radio-checkbox-control";
 @import "./index-style/before-after-list.scss";
 @import "./index-style/before-after.scss";
 @import "./index-style/comparison.scss";
+@import "./index-style/main-container";
 @import "./index-style/offer-content-list.scss";
 @import "./index-style/offer-content.scss";
 @import "./index-style/offer.scss";
 @import "./index-style/range.scss";
 @import "./index-style/work-list.scss";
 @import "./index-style/work.scss";
-//form
-@import "./form-style/form-headline.scss";
-@import "./form-style/form.scss";
-@import "./form-style/radio-button.scss";
-@import "./form-style/checkbox.scss";
-@import "./form-style/radio-checkbox-control";
-@import "./form-style/checkbox-control.scss";
+@import "./main-footer.scss";
+@import "./main-header.scss";
+@import "./main-nav.scss";
+@import "./page.scss";
+@import "./site-list.scss";
+@import "./social.scss";
 //catalog
-@import "./catalog-style/additional-products-list-item.scss";
-@import "./catalog-style/additional-products-list.scss";
-@import "./catalog-style/additional-products.scss";
-@import "./catalog-style/catalog.scss";
-@import "./catalog-style/container-catalog.scss";
-@import "./catalog-style/description-table.scss";
-@import "./catalog-style/gift.scss";
-@import "./catalog-style/show-all.scss";
-@import "./catalog-style/catalog-item.scss";
+//fonts
+//form
+//Global
+//index
+//other
