@@ -11,23 +11,34 @@
 .before-after__title {
   margin: 0 0 40px 0;
   padding: 0;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+  font-weight: 400;
 }
 
 .before-after__text {
   margin: 0 0 20px 0;
+  font-family: $Arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-grey;
 }
 
 .before-after__price {
   margin: 0 0 40px 0;
   padding: 0;
   text-align: center;
-}
-
-.before-after__price-item {
-
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
 }
 
 .before-after__price-value {
 
 }
 
+.before-after__price-item {
+
+}
