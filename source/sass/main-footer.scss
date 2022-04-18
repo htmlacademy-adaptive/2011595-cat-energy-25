@@ -1,16 +1,15 @@
 .main-footer {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px 0 20px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   background-color: $grey;
 }
 
 .main-footer__logo {
   margin: 0 auto;
   padding: 39px 0 32px 0;
+  display: block;
 }
 
 .main-footer__logo-text {

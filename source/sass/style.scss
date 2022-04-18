@@ -1,43 +1,36 @@
 @import "./fonts.scss";
 @import "./global.scss";
-//catalog
-@import "./catalog-style/additional-products-list-item.scss";
-@import "./catalog-style/additional-products-list.scss";
-@import "./catalog-style/additional-products.scss";
-@import "./catalog-style/catalog-item.scss";
-@import "./catalog-style/catalog.scss";
-@import "./catalog-style/container-catalog.scss";
-@import "./catalog-style/description-table.scss";
-@import "./catalog-style/gift.scss";
-@import "./catalog-style/show-all.scss";
-//other
+@import "./additional-products-list-item.scss";
+@import "./additional-products-list.scss";
+@import "./additional-products.scss";
+@import "./before-after-list.scss";
+@import "./before-after.scss";
+@import "./catalog-item.scss";
+@import "./catalog.scss";
+@import "./checkbox-control.scss";
+@import "./checkbox.scss";
+@import "./comparison.scss";
 @import "./contacts.scss";
+@import "./container-catalog.scss";
 @import "./copyright.scss";
-@import "./form-style/checkbox-control.scss";
-@import "./form-style/checkbox.scss";
-@import "./form-style/form-headline.scss";
-@import "./form-style/form.scss";
-@import "./form-style/radio-button.scss";
-@import "./form-style/radio-checkbox-control";
-@import "./index-style/before-after-list.scss";
-@import "./index-style/before-after.scss";
-@import "./index-style/comparison.scss";
-@import "./index-style/main-container";
-@import "./index-style/offer-content-list.scss";
-@import "./index-style/offer-content.scss";
-@import "./index-style/offer.scss";
-@import "./index-style/range.scss";
-@import "./index-style/work-list.scss";
-@import "./index-style/work.scss";
+@import "./description-table.scss";
+@import "./form-headline.scss";
+@import "./form.scss";
+@import "./gift.scss";
+@import "./main-container";
 @import "./main-footer.scss";
 @import "./main-header.scss";
 @import "./main-nav.scss";
+@import "./offer-content-list.scss";
+@import "./offer-content.scss";
+@import "./offer.scss";
 @import "./page.scss";
+@import "./radio-button.scss";
+@import "./radio-control";
+@import "./range.scss";
+@import "./show-all.scss";
 @import "./site-list.scss";
 @import "./social.scss";
-//catalog
-//fonts
-//form
-//Global
-//index
-//other
+@import "./work-list.scss";
+@import "./work.scss";
+
