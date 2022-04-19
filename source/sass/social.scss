@@ -7,17 +7,19 @@
 }
 
 .social__item {
-
+  visibility: visible;
 }
 
 .social__link {
   &--vkontakte {
-
+    visibility: visible;
   }
+
   &--youtube {
-
+    visibility: visible;
   }
-  &--telegram {
 
+  &--telegram {
+    visibility: visible;
   }
 }

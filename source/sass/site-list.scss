@@ -6,9 +6,10 @@
 .site-list__item {
   border-bottom: 1px solid #e6e6e6;
   padding: 22px 0 24px 0;
-  &--active {
 
-}
+  &--active {
+    visibility: visible;
+  }
 }
 
 .site-list__link {

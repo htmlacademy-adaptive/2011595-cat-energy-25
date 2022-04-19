@@ -9,7 +9,7 @@
     position: absolute;
     height: 302px;
     width: 100%;
-    background-image: url(../../img/background/offer-background-mobile.jpg);
+    background-image: url("../../img/background/offer-background-mobile.jpg");
     background-color: $green;
     background-repeat: no-repeat;
     z-index: -1;
@@ -58,5 +58,4 @@
   display: block;
   margin: 0 auto;
   height: 100%;
-
 }
