@@ -1,11 +1,7 @@
 .catalog-item {
   padding-bottom: 25px;
   border-top: 1px solid #ebebeb;
-
-  &--all {
-
-  }
-  }
+}
 
 .catalog-item__image-link {
   width: 140px;
@@ -59,4 +55,3 @@
   color: $dark-grey;
   font-family: $Arial;
 }
-

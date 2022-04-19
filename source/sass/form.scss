@@ -1,5 +1,5 @@
 .form {
-
+  visibility: visible;
 }
 
 .form__field {
@@ -23,6 +23,7 @@
 }
 
 .form__input {
+  visibility: visible;
 
   &::placeholder {
     padding-left: 15px;
