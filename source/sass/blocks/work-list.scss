@@ -2,14 +2,25 @@
   padding: 0 0 49px 0;
   margin: 0;
   list-style: none;
+  position: relative;
 }
 
 .work-list__item {
   visibility: visible;
 }
 
+.work-list__image-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: $green;
+}
+
 .work-list__image {
-  visibility: visible;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .work-list__text {

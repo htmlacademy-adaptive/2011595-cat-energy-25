@@ -16,6 +16,18 @@
     top: 0;
     box-sizing: border-box;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 302px;
+    width: 100%;
+    background: rgba(104, 183, 56, 0.85);
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0;
+    box-sizing: border-box;
+  }
 }
 
 .offer__title {
