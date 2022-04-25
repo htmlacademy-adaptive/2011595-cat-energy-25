@@ -1,8 +1,7 @@
 .before-after-list {
   list-style: none;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
-  margin-bottom: 20px;
 }
 
 .before-after-list__item {
@@ -21,7 +20,7 @@
 
 .before-after-list__title {
   margin-top: 8px;
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-size: 12px;
   line-height: 12px;
   color: $dark-grey;

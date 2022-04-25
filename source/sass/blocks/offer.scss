@@ -9,9 +9,8 @@
     position: absolute;
     height: 302px;
     width: 100%;
-    background-image: url("../../img/background/offer-background-mobile.jpg");
-    background-color: $green;
-    background-repeat: no-repeat;
+    background: url("../../img/background/offer-background-mobile.jpg")
+      no-repeat $green;
     z-index: -1;
     top: 0;
     box-sizing: border-box;
@@ -22,8 +21,7 @@
     position: absolute;
     height: 302px;
     width: 100%;
-    background: rgba(104, 183, 56, 0.85);
-    background-repeat: no-repeat;
+    background: rgba(104, 183, 56, 0.85) no-repeat;
     z-index: -1;
     top: 0;
     box-sizing: border-box;

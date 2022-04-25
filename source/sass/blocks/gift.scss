@@ -11,9 +11,8 @@
     position: absolute;
     min-height: 289px;
     width: 100%;
-    background-image: url("../img/background/gift-background-mobile.jpg");
-    background-color: $green;
-    background-repeat: no-repeat;
+    background: url("../../img/background/gift-background-mobile.jpg") no-repeat
+      $green;
     z-index: -1;
     top: 0;
   }
@@ -23,8 +22,7 @@
     position: absolute;
     min-height: 289px;
     width: 100%;
-    background: rgba(104, 183, 56, 0.85);
-    background-repeat: no-repeat;
+    background: rgba(104, 183, 56, 0.85) no-repeat;
     z-index: -1;
     top: 0;
   }
