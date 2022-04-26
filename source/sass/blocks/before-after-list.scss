@@ -2,6 +2,15 @@
   list-style: none;
   margin: 0 0 20px 0;
   padding: 0;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 42px;
+    width: 100%;
+    max-width: 366px;
+  }
 }
 
 .before-after-list__item {

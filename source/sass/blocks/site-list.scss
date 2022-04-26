@@ -23,6 +23,10 @@
       visibility: visible;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    z-index: 2;
+  }
 }
 
 .site-list__link {
@@ -36,4 +40,13 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 22px 0 24px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }

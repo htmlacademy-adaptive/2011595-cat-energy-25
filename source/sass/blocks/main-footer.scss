@@ -4,10 +4,15 @@
   padding: 0 20px 0 20px;
   box-sizing: border-box;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__logo {
-  margin: 0 auto;
+  margin: 0;
   padding: 39px 0 32px 0;
   display: block;
 }

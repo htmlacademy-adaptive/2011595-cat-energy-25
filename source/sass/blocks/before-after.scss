@@ -2,6 +2,12 @@
   padding-top: 25px;
   padding-bottom: 40px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    background-color: $white;
+    padding-bottom: 55px;
+  }
 }
 
 .before-after__half {
@@ -15,6 +21,16 @@
   line-height: 40px;
   color: $black;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 63px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px 0;
+  }
 }
 
 .before-after__text {
@@ -23,6 +39,20 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
+  max-width: 440px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 54px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 70px;
+  }
 }
 
 .before-after__price {
@@ -33,6 +63,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .before-after__price-value {
@@ -41,4 +75,21 @@
 
 .before-after__price-item {
   visibility: visible;
+}
+
+.before-after__wrapper {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 366px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 55px;
+  }
 }
