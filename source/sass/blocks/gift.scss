@@ -1,0 +1,43 @@
+.gift {
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-height: 289px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    min-height: 289px;
+    width: 100%;
+    background: url("../../img/background/gift-background-mobile.jpg") no-repeat
+      $green;
+    z-index: -1;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    min-height: 289px;
+    width: 100%;
+    background: rgba(104, 183, 56, 0.85) no-repeat;
+    z-index: -1;
+    top: 0;
+  }
+}
+
+.gift__image {
+  padding-top: 58px;
+  margin-bottom: 48px;
+}
+
+.gift__info {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  font-family: $Arial;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.description-table {
+  margin: 0;
+  padding: 0;
+}
+
+.description-table__row {
+  visibility: visible;
+}
+
+.description-table__cell {
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+  font-style: normal;
+  font-family: $Arial;
+}

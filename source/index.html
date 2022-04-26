@@ -4,17 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logos/logo.svg" width="33" height="38"
+      <img class="main-header__logo-image" src="img/logos/logo.svg"
         alt="Логотип Cat Energy картинка рыжего кота в плаще.">
     </a>
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-text" src="img/logos/text-logo.svg" width="101" height="18"
-        alt="Логотип Cat Energy текстовая надпись.">
+      <img class="main-header__logo-text" src="img/logos/text-logo.svg" alt="Логотип Cat Energy текстовая надпись.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -22,17 +23,17 @@
       </button>
       <ul class="site-list">
         <li class="site-list__item site-list__item--active">
-          <a>
+          <a class="site-list__link">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">
+          <a class="site-list__link" href="catalog.html">
             Каталог продукции
           </a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">
+          <a class="site-list__link" href="form.html">
             Подбор программы
           </a>
         </li>
@@ -43,13 +44,20 @@
     <section class="offer">
       <h1 class="offer__title">Функциональное<br>питание для котов</h1>
       <p class="offer__intro">Занялся собой? Займись котом!</p>
+      <img class="offer__image" src="./img/largepic/index-chichen-mobile.png"
+        alt="Упаковка корма Cat Energy со вкусом курицы.">
+
       <a class="offer__button" href="form.html">
         Подобрать программу
       </a>
     </section>
     <section class="offer-content">
       <ul class="offer-content-list">
-        <li class="offer-content-list__item offer-content-list__item--slim">
+        <li class="offer-content-list__item">
+          <div class="offer-content-list__image-wrapper">
+            <img class="offer-content-list__image" src="./img/icons/cat-slim.svg"
+              alt="Черный худой кот на фоне зеленого круга." width="36px" height="50px">
+          </div>
           <h2 class="offer-content-list__title">Похудение</h2>
           <p class="offer-content-list__description">Ваш кот весит больше собаки и почти
             утратил способность лазить по деревьям? Пора на диету! Cat Energy
@@ -58,11 +66,15 @@
             Каталог SLIM
           </a>
         </li>
-        <li class="offer-content__item offer-list__item--power">
-          <h2 class="offer-content__title">Набор массы</h2>
-          <p class="offer-content__description">Заработать авторитет среди дворовых котов и
-            даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="offer-content__description-button" href="#">
+        <li class="offer-content-list__item">
+          <div class="offer-content-list__image-wrapper">
+            <img class="offer-content-list__image" src="./img/icons/cat-power.svg"
+              alt="Черный кот с мышцами на фоне зеленого круга." width="67px" height="28px">
+          </div>
+          <h2 class="offer-content-list__title">Набор массы</h2>
+          <p class="offer-content-list__description">Заработать авторитет среди дворовых
+            котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="offer-content-list__description-button" href="#">
             Каталог PRO
           </a>
         </li>
@@ -72,19 +84,27 @@
       <h2 class="work__title">Как это работает</h2>
       <ul class="work-list">
         <li class="work-list__item">
-          <img class="work-list__image" src="./img/icons/leaf.svg" alt="Листочек в зеленом квадрате.">
+          <div class="work-list__image-wrapper">
+            <img class="work-list__image" src="./img/icons/leaf.svg" alt="Листочек в зеленом квадрате.">
+          </div>
           <p class="work-list__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="work-list__item">
-          <img class="work-list__image" src="./img/icons/powder.svg" alt="Порошок в зеленом квадрате.">
+          <div class="work-list__image-wrapper">
+            <img class="work-list__image" src="./img/icons/powder.svg" alt="Порошок в зеленом квадрате.">
+          </div>
           <p class="work-list__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="work-list__item">
-          <img class="work-list__image" src="./img/icons/eat.svg" alt="Вилка и нож в зеленом квадрате.">
+          <div class="work-list__image-wrapper">
+            <img class="work-list__image" src="./img/icons/eat.svg" alt="Вилка и нож в зеленом квадрате.">
+          </div>
           <p class="work-list__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="work-list__item">
-          <img class="work-list__image" src="./img/icons/alarm.svg" alt="Будильник в зеленом квадрате.">
+          <div class="work-list__image-wrapper">
+            <img class="work-list__image" src="./img/icons/alarm.svg" alt="Будильник в зеленом квадрате.">
+          </div>
           <p class="work-list__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
@@ -110,10 +130,11 @@
           <span class="before-after__price-value">15000 РУБ.</span>
         </p>
       </div>
-      <div class="before-after__half comparison">
-        <img class="comparison__fat-cat" src="" alt="Толстый кот.">
-        <img class="comparison__thin-cat" src="" alt="Худой кот.">
-        <div class="comparison__range range">
+      <div class="comparison">
+        <img class="comparison__fat-cat" src="./img/largepic/index-fat-cat-mobile.png"
+          alt="Толстый кот до корма Cat Energy.">
+        <img class="comparison__thin-cat" src="" alt="Худой кот после корма Cat Energy.">
+        <div class="range">
           <button class="range__button" type="button">Было</button>
           <div class="range__scale">
             <span class="range__bar"></span>
@@ -122,21 +143,21 @@
         </div>
       </div>
     </section>
-  </main>
-  <footer class="main-footer">
     <section class="contacts">
       <h2 class="visually-hidden">Наш адрес.</h2>
       <div class="contacts__wrapper">
         <p class="contacts__title">Приглашаем <br>к сотрудничеству<br>дилеров!</p>
         <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
-      <img class="contacts__map-google" src="./img/large-pic/location-mobile.jpg" alt="Карта с расположением магазина.">
+      <img class="contacts__map-google" src="./img/largepic/location-mobile.jpg" alt="Карта с расположением магазина.">
     </section>
+  </main>
+  <footer class="main-footer">
     <a class="main-footer__logo">
       <img class="main-footer__logo-text" src="img/logos/text-logo.svg" width="128" height="24"
         alt="Текстовый логотип Cat Energy.">
     </a>
-    <ul class="main-footer__social social">
+    <ul class="social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           <p class="visually-hidden">Мы в Вконтакте.</p>
@@ -153,7 +174,7 @@
         </a>
       </li>
     </ul>
-    <div class="main-footer__copyright copyright">
+    <div class="copyright">
       <a class="copyright__link" href="http://htmlacademy.ru">HTML Academy</a>
       <a class="copyright__link-logo" href="http://htmlacademy.ru" aria-label="Переход на сайт HTML Academy.">
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
