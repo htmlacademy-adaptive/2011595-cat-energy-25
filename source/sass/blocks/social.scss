@@ -6,6 +6,7 @@
   border-bottom: 1px solid #d9d9d9;
   display: flex;
   gap: 24px;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     border: 0;

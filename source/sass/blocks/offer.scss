@@ -1,5 +1,4 @@
 .offer {
-  position: relative;
   background-color: $white;
   padding-top: 27px;
   z-index: 1;
@@ -12,7 +11,6 @@
   @media (min-width: $desktop-width) {
     padding: 0 0 0 80px;
     min-height: 473px;
-    position: static;
   }
 
   &::before {
@@ -22,9 +20,11 @@
     width: 100%;
     background: url("../../img/background/offer-background-mobile.jpg")
       no-repeat $green;
-    z-index: -1;
+    z-index: 0;
     top: 0;
+    left: 0;
     box-sizing: border-box;
+    background-size: cover;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -36,6 +36,7 @@
       min-height: 694px;
       right: 0;
       z-index: 1;
+      left: inherit;
     }
   }
 
@@ -45,8 +46,9 @@
     min-height: 302px;
     width: 100%;
     background: rgba(104, 183, 56, 0.85) no-repeat;
-    z-index: -1;
+    z-index: 0;
     top: 0;
+    left: 0;
     box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
@@ -59,6 +61,7 @@
       min-height: 694px;
       right: 0;
       z-index: 1;
+      left: inherit;
     }
   }
 }
@@ -71,6 +74,8 @@
   line-height: 36px;
   color: $white;
   text-align: center;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -89,6 +94,8 @@
   color: $white;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -123,6 +130,8 @@
 .offer__image {
   display: block;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     z-index: -1;

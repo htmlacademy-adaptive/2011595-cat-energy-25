@@ -40,4 +40,18 @@
   position: relative;
   left: -20px;
   display: block;
+  width: 116%;
+  min-height: 362px;
+  max-height: 450px;
+
+  @media (min-width: $tablet-width) {
+    left: -30px;
+    max-height: 650px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -110px;
+    max-height: 850px;
+    width: 120%;
+  }
 }

@@ -1,7 +1,24 @@
 .before-after {
   padding-top: 25px;
   padding-bottom: 40px;
-  background-color: #eaeaea;
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    background-color: #eaeaea;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 140%;
+    top: 0;
+    left: -20px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
