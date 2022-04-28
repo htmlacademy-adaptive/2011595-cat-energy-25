@@ -25,6 +25,7 @@
     left: 0;
     box-sizing: border-box;
     background-size: cover;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
       display: none;
