@@ -5,22 +5,20 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  row-gap: 20px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 37px;
+    row-gap: 37px;
+    column-gap: calc(100% - 35% - 35% - 60px - 77px);
     padding: 0 0 47px 0;
-    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 37px;
+    flex-wrap: nowrap;
+    column-gap: inherit;
     padding: 0 0 26px 0;
     border: 0;
   }
@@ -33,9 +31,22 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    max-width: 246px;
     min-height: 280px;
     gap: 31px;
+    max-width: 35.5%;
+
+    &:nth-child(2n) {
+      margin-right: 77px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 25%;
+    margin-right: 78px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
@@ -43,13 +54,18 @@
   position: relative;
   min-width: 60px;
   min-height: 60px;
+  max-width: 60px;
   background: $green;
   margin-right: 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 166px 0 0;
+    margin: 37px 166px 0 0;
     min-width: 80px;
     min-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 37px 0 0 0;
   }
 }
 
@@ -66,6 +82,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

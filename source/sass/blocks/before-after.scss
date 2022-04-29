@@ -16,6 +16,12 @@
     box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
+      height: 1px;
+      z-index: 1;
+      left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
       display: none;
     }
   }
@@ -62,6 +68,7 @@
     margin: 0 0 54px 0;
     font-size: 16px;
     line-height: 24px;
+    max-width: inherit;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,6 +76,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-top: 70px;
+    max-width: 35.7%;
   }
 }
 
@@ -83,11 +91,21 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+    justify-content: center;
   }
 }
 
 .before-after__price-value {
-  visibility: visible;
+  text-align: right;
 }
 
 .before-after__price-item {

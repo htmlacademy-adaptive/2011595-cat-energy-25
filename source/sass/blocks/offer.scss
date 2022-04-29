@@ -83,6 +83,15 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: block;
+    }
   }
 }
 

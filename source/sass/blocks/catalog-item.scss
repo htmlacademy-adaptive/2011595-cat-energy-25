@@ -1,16 +1,30 @@
 .catalog-item {
   padding-bottom: 25px;
+  padding-top: 19px;
+  height: 209px;
+  box-sizing: border-box;
   border-top: 1px solid #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-item__image-link {
-  width: 140px;
   height: 112px;
+  width: 50%;
+  display: block;
 }
 
 .catalog-item__image {
   margin: 0 auto;
   display: block;
+}
+
+.catalog-item__card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 112px;
 }
 
 .catalog-item__order {
@@ -22,11 +36,14 @@
   width: 100%;
   display: block;
   padding: 10px;
+  height: 40px;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  flex-grow: 10;
+  margin-top: 13px;
 
   &--all {
     background-color: $grey;
