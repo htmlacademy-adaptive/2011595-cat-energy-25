@@ -3,17 +3,70 @@
   margin: 0;
   list-style: none;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 37px;
+    column-gap: calc(100% - 35% - 35% - 60px - 77px);
+    padding: 0 0 47px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    column-gap: inherit;
+    padding: 0 0 26px 0;
+    border: 0;
+  }
 }
 
 .work-list__item {
   visibility: visible;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    gap: 31px;
+    max-width: 35.5%;
+
+    &:nth-child(2n) {
+      margin-right: 77px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 25%;
+    margin-right: 78px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
 
 .work-list__image-wrapper {
   position: relative;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 60px;
   background: $green;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 37px 166px 0 0;
+    min-width: 80px;
+    min-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 37px 0 0 0;
+  }
 }
 
 .work-list__image {
@@ -29,4 +82,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

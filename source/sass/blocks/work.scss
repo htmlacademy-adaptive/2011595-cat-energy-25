@@ -9,4 +9,16 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 26px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

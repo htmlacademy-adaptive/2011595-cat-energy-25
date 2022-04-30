@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
@@ -17,10 +18,10 @@
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-text" src="img/logos/text-logo.svg" alt="Логотип Cat Energy текстовая надпись.">
     </a>
+    <button class="main-header__toggle" type="button">
+      <span class="visually-hidden">Открыть меню.</span>
+    </button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
       <ul class="site-list">
         <li class="site-list__item site-list__item--active">
           <a class="site-list__link">
@@ -42,7 +43,7 @@
   </header>
   <main class="main-container">
     <section class="offer">
-      <h1 class="offer__title">Функциональное<br>питание для котов</h1>
+      <h1 class="offer__title">Функциональное <br>питание для котов</h1>
       <p class="offer__intro">Занялся собой? Займись котом!</p>
       <img class="offer__image" src="./img/largepic/index-chichen-mobile.png"
         alt="Упаковка корма Cat Energy со вкусом курицы.">
@@ -115,20 +116,22 @@
         <p class="before-after__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16 часов в день. </p>
-        <ul class="before-after-list">
-          <li class="before-after-list__item">
-            <span class="before-after-list__value">5 КГ</span>
-            <span class="before-after-list__title">снижение веса</span>
-          </li>
-          <li class="before-after-list__item">
-            <span class="before-after-list__value">60 ДНЕЙ</span>
-            <span class="before-after-list__title">затрачено времени</span>
-          </li>
-        </ul>
-        <p class="before-after__price">
-          <span class="before-after__price-item">Затраты на питание:</span>
-          <span class="before-after__price-value">15000 РУБ.</span>
-        </p>
+        <div class="before-after__wrapper">
+          <ul class="before-after-list">
+            <li class="before-after-list__item">
+              <span class="before-after-list__value">5 КГ</span>
+              <span class="before-after-list__title">снижение веса</span>
+            </li>
+            <li class="before-after-list__item">
+              <span class="before-after-list__value">60 ДНЕЙ</span>
+              <span class="before-after-list__title">затрачено времени</span>
+            </li>
+          </ul>
+          <p class="before-after__price">
+            <span class="before-after__price-item">Затраты на питание:</span>
+            <span class="before-after__price-value">15000 РУБ.</span>
+          </p>
+        </div>
       </div>
       <div class="comparison">
         <img class="comparison__fat-cat" src="./img/largepic/index-fat-cat-mobile.png"

@@ -2,6 +2,19 @@
   list-style: none;
   margin: 0 0 20px 0;
   padding: 0;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 42px;
+    width: 50%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: inherit;
+  }
 }
 
 .before-after-list__item {
@@ -9,6 +22,7 @@
   text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  width: 50%;
 }
 
 .before-after-list__value {

@@ -1,7 +1,36 @@
 .before-after {
   padding-top: 25px;
   padding-bottom: 40px;
-  background-color: #eaeaea;
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    background-color: #eaeaea;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: -20px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      height: 1px;
+      z-index: 1;
+      left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    background-color: $white;
+    padding-bottom: 55px;
+  }
 }
 
 .before-after__half {
@@ -15,6 +44,16 @@
   line-height: 40px;
   color: $black;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 63px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px 0;
+  }
 }
 
 .before-after__text {
@@ -23,6 +62,22 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
+  max-width: 440px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 54px 0;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 70px;
+    max-width: 35.7%;
+  }
 }
 
 .before-after__price {
@@ -33,12 +88,43 @@
   font-size: 14px;
   line-height: 20px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+    justify-content: center;
+  }
 }
 
 .before-after__price-value {
-  visibility: visible;
+  text-align: right;
 }
 
 .before-after__price-item {
   visibility: visible;
+}
+
+.before-after__wrapper {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 366px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 55px;
+  }
 }

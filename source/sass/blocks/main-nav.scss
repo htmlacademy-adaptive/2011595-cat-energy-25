@@ -1,7 +1,11 @@
 .main-nav {
   align-self: center;
-}
+  width: 100%;
+  margin-bottom: -17px;
+  margin-top: 17px;
 
-.main-nav__toggle {
-  visibility: visible;
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+  }
 }
