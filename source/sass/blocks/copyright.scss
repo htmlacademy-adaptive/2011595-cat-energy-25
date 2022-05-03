@@ -14,4 +14,8 @@
   font-size: 16px;
   line-height: 18px;
   font-family: $Arial;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 }

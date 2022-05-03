@@ -1,5 +1,25 @@
 .contacts {
   display: block;
+
+  &--background {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #eaeaea;
+      z-index: -1;
+      height: 100%;
+      width: 105vw;
+      top: 0;
+      left: -20px;
+      box-sizing: border-box;
+
+      @media (min-width: $tablet-width) {
+        left: -70px;
+      }
+    }
+  }
 }
 
 .contacts__wrapper {

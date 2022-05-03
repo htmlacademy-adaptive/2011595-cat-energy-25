@@ -6,6 +6,25 @@
   display: block;
   min-height: 289px;
 
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    display: flex;
+    padding: 57px 124px 61px 77px;
+    justify-content: space-between;
+    gap: 264px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 289px;
+    padding: 55px 43px 42px 41px;
+    gap: 0;
+    margin-bottom: 0;
+    width: 20%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -15,22 +34,58 @@
       $green;
     z-index: -1;
     top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      min-height: 200px;
+      background-position: 50% 60%;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 289px;
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
     min-height: 289px;
+    left: 0;
     width: 100%;
     background: rgba(104, 183, 56, 0.85) no-repeat;
     z-index: -1;
     top: 0;
+
+    @media (min-width: $tablet-width) {
+      min-height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 289px;
+    }
   }
 }
 
 .gift__image {
   padding-top: 58px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px auto;
+  display: block;
+  width: 56px;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    width: 58px;
+    height: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
 
 .gift__info {
@@ -40,4 +95,14 @@
   color: $white;
   font-family: $Arial;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 46px;
+    text-align: center;
+  }
 }

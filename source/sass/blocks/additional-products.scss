@@ -1,5 +1,16 @@
 .additional-products {
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .additional-products__title {
@@ -8,4 +19,15 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 2;
+    width: 100%;
+  }
 }

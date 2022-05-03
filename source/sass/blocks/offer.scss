@@ -4,12 +4,12 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 87px;
+    padding: 64px 0 0 87px;
     min-height: 810px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 80px;
+    padding: 111px 0 0 80px;
     min-height: 473px;
   }
 
