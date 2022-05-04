@@ -4,6 +4,19 @@
   position: relative;
   display: block;
 
+  @media (min-width: $tablet-width) {
+    height: 1px;
+    z-index: 1;
+    left: -30px;
+    padding-top: 43px;
+    background-color: $white;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    visibility: visible;
+  }
+
   &::before {
     content: "";
     background-color: #eaeaea;
@@ -14,22 +27,6 @@
     top: 0;
     left: -20px;
     box-sizing: border-box;
-
-    @media (min-width: $tablet-width) {
-      height: 1px;
-      z-index: 1;
-      left: -30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 43px;
-    background-color: $white;
-    padding-bottom: 55px;
   }
 }
 
