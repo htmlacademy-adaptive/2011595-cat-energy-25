@@ -12,16 +12,16 @@
     width: 100%;
     flex-direction: row;
     row-gap: 32px;
-    column-gap: 104px;
+    column-gap: calc(100% - 442px);
   }
 }
 
 .checkbox__item {
   @media (min-width: $tablet-width) {
-    width: calc(221 / 628) * 100%;
+    width: 221px;
   }
 
   @media (min-width: $desktop-width) {
-    width: calc(221 / 1220) * 100%;
+    width: 221px;
   }
 }

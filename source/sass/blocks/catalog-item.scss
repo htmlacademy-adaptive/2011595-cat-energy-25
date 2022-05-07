@@ -126,9 +126,13 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 0;
-    width: calc(248 / 324) * 100%;
+    width: calc(100% - 72px);
     align-self: center;
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 65px);
   }
 
   &--all {
@@ -147,6 +151,7 @@
   color: #222222;
   font-weight: 400;
   text-transform: uppercase;
+  width: 56%;
 
   br {
     display: none;
@@ -157,12 +162,12 @@
     line-height: 24px;
     margin-bottom: 21px;
     text-align: center;
-    width: 54%;
+    width: 42%;
     align-self: center;
   }
 
   @media (min-width: $desktop-width) {
-    width: 75%;
+    width: 54%;
   }
 
   &--all {

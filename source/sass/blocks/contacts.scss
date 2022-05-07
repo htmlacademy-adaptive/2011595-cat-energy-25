@@ -3,41 +3,44 @@
   flex-grow: 2;
   width: 100%;
   position: relative;
+  background-color: $white;
+  overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: $white;
-    z-index: -1;
-    height: 100%;
-    width: 108vw;
-    top: 0;
-    left: -20px;
-    box-sizing: border-box;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: $white;
+  //   z-index: -1;
+  //   height: 100%;
+  //   width: 108vw;
+  //   top: 0;
+  //   left: -20px;
+  //   box-sizing: border-box;
 
-    @media (min-width: $tablet-width) {
-      left: -70px;
-    }
-  }
+  //   @media (min-width: $tablet-width) {
+  //     left: -70px;
+  //   }
+  // }
 
   &--background {
+    background-color: #eaeaea;
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: #eaeaea;
-      z-index: -1;
-      height: 100%;
-      width: 108vw;
-      top: 0;
-      left: -20px;
-      box-sizing: border-box;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background-color: #eaeaea;
+    //   z-index: -1;
+    //   height: 100%;
+    //   width: 108vw;
+    //   top: 0;
+    //   left: -20px;
+    //   box-sizing: border-box;
 
-      @media (min-width: $tablet-width) {
-        left: -70px;
-      }
-    }
+    //   @media (min-width: $tablet-width) {
+    //     left: -70px;
+    //   }
+    // }
   }
 }
 

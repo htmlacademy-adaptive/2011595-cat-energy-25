@@ -38,9 +38,23 @@
   color: $black;
   text-transform: uppercase;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 0 66px 0;
     font-size: 20px;
     line-height: 30px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: block;
+    }
   }
 }
