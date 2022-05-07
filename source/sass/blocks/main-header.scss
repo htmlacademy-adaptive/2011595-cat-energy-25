@@ -37,9 +37,44 @@
 }
 
 .main-header__toggle {
-  visibility: visible;
+  border: 0;
+  background: $white;
+  width: 24px;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &--close::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+    box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  }
+
+  &--open {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      right: 20px;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
