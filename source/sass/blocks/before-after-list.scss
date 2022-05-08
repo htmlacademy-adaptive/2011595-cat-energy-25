@@ -1,6 +1,6 @@
 .before-after-list {
   list-style: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 35px 0;
   padding: 0;
   display: flex;
   gap: 32px;
@@ -23,6 +23,12 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   width: 50%;
+  max-height: 56px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-height: 72px;
+  }
 }
 
 .before-after-list__value {
@@ -30,6 +36,11 @@
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .before-after-list__title {
@@ -38,4 +49,15 @@
   font-size: 12px;
   line-height: 12px;
   color: $dark-grey;
+  background-color: #eaeaea;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+    margin-top: 12px;
+    display: block;
+    width: 142px;
+  }
 }

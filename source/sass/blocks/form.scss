@@ -59,21 +59,60 @@
 }
 
 .form__title {
-  margin: 0 0 35px 0;
+  margin: 0;
   padding: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $black;
-  width: 100%;
+  background-color: $white;
+  display: inline-block;
+  padding-right: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 76px 0;
+    margin: 0;
+    padding: 0 40px;
+    margin-left: -40px;
 
     br {
       display: none;
+    }
+  }
+
+  &--special-line {
+    padding-right: 14px;
+    margin-right: 76px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 40px;
+      margin-left: -40px;
+      margin-right: 0;
+    }
+  }
+}
+
+.form__wrapper-title {
+  position: relative;
+  margin: 0 0 35px 0;
+
+  &::before {
+    content: "";
+    top: 50%;
+    height: 2px;
+    width: 100vw;
+    background-color: $green;
+    z-index: -1;
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 76px 0;
+      left: -70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -110px;
     }
   }
 }
@@ -82,6 +121,7 @@
   width: 100%;
   display: block;
   height: 45px;
+  font-size: 20px;
 
   @media (min-width: $tablet-width) {
     height: 52px;

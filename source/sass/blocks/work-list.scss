@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  counter-reset: work;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
@@ -26,6 +27,8 @@
 
 .work-list__item {
   display: flex;
+  counter-increment: work;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -33,6 +36,19 @@
     min-height: 280px;
     gap: 31px;
     max-width: 35.5%;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(work);
+      font-size: 280px;
+      line-height: 280px;
+      width: 120px;
+      color: $grey;
+      z-index: -1;
+      position: absolute;
+      left: 100px;
+    }
   }
 
   @media (min-width: $desktop-width) {

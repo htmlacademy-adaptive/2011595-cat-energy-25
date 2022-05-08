@@ -173,10 +173,13 @@
   &--all {
     color: #111111;
     align-self: center;
+    width: 73%;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 23px;
       width: 43%;
+      line-height: 22px;
     }
 
     @media (min-width: $desktop-width) {
