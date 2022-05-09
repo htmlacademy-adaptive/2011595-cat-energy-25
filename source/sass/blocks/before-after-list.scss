@@ -18,13 +18,15 @@
 }
 
 .before-after-list__item {
-  padding: 14px 20px 17px 20px;
+  padding: 14px 15px 17px 15px;
   text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   width: 50%;
   max-height: 56px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     max-height: 72px;
@@ -51,6 +53,7 @@
   color: $dark-grey;
   background-color: #eaeaea;
   display: block;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
