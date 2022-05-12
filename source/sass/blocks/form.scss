@@ -68,6 +68,8 @@
   background-color: $white;
   display: inline-block;
   padding-right: 22px;
+  padding-left: 20px;
+  margin-left: -20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -83,7 +85,9 @@
 
   &--special-line {
     padding-right: 14px;
-    margin-right: 76px;
+    margin-right: 84px;
+    padding-left: 20px;
+    margin-left: -20px;
 
     @media (min-width: $tablet-width) {
       padding: 0 40px;
@@ -105,6 +109,7 @@
     background-color: $green;
     z-index: -1;
     position: absolute;
+    left: -20px;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 76px 0;

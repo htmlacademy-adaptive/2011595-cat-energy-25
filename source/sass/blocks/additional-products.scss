@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 68px 30px 0 30px;
+    overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,13 +15,13 @@
 }
 
 .additional-products__title {
-  margin: 0;
+  margin: 0 0 0 -20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $black;
   display: inline-block;
-  padding-right: 22px;
+  padding: 0 22px 0 20px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
@@ -32,7 +33,6 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 2;
-    width: 100%;
     padding-left: 40px;
     padding-right: 35px;
     margin-left: -40px;
@@ -47,6 +47,11 @@
     margin: 0 0 80px 0;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: 0 0 80px 0;
+    width: 100%;
+  }
+
   &::before {
     content: "";
     top: 50%;
@@ -55,6 +60,7 @@
     background-color: $green;
     z-index: -1;
     position: absolute;
+    right: -20px;
 
     @media (min-width: $tablet-width) {
       left: -30px;
