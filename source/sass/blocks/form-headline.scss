@@ -42,17 +42,10 @@
     margin: 0 0 66px 0;
     font-size: 20px;
     line-height: 30px;
+    max-width: 51%;
   }
 
-  br {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
+  @media (min-width: $desktop-width) {
+    max-width: 32%;
   }
 }

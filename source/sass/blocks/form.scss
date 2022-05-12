@@ -109,15 +109,15 @@
     background-color: $green;
     z-index: -1;
     position: absolute;
-    left: -20px;
+    right: -20px;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 76px 0;
-      left: -70px;
+      right: -70px;
     }
 
     @media (min-width: $desktop-width) {
-      left: -110px;
+      right: -110px;
     }
   }
 }
