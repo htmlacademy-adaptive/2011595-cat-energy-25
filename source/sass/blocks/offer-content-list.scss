@@ -92,6 +92,17 @@
     line-height: 30px;
     color: $black;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -39px;
+    top: 50%;
+    width: 24px;
+    height: 12px;
+    background: url("../../img/icons/arrow.svg") no-repeat center;
+    transform: translateY(-50%);
+  }
 }
 
 .offer-content-list__image-wrapper {

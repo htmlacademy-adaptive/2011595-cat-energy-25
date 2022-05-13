@@ -4,12 +4,12 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 87px;
+    padding: 64px 0 0 87px;
     min-height: 810px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 80px;
+    padding: 111px 0 0 80px;
     min-height: 473px;
   }
 
@@ -125,14 +125,17 @@
   text-align: center;
   width: 100%;
   display: block;
-  padding: 7px 10px 7px 10px;
+  padding: 11px 10px 7px 10px;
   box-sizing: border-box;
   margin: 0 auto 30px auto;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px 14px 26px;
+    padding: 9px 26px 9px 26px;
     width: 244px;
     margin: 0;
   }

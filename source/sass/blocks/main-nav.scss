@@ -8,4 +8,20 @@
     width: auto;
     margin: 0;
   }
+
+  &--closed .site-list {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+
+  &--nojs .main-header__toggle {
+    display: none;
+  }
+
+  &--opened .site-list {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
+  }
 }

@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: 27px 20px 0 20px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 70px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 110px 0 110px;
+  }
 }
 
 .form-headline__title {
@@ -11,11 +19,33 @@
   font-size: 36px;
   line-height: 36px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 54px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 56px 0;
+  }
 }
 
 .form-headline__offer {
-  margin: 0 0 39px 0;
+  margin: 0 8px 39px 0;
   font-size: 14px;
   line-height: 18px;
   color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 66px 0;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 51%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 32%;
+  }
 }

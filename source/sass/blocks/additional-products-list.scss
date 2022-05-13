@@ -3,4 +3,9 @@
   margin: 0 0 35px 0;
   padding: 0;
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $desktop-width) {
+    width: calc(896 / 1220) * 100%;
+    margin: 0 0 86px 0;
+  }
 }

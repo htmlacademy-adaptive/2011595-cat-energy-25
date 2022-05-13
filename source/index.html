@@ -18,23 +18,23 @@
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-text" src="img/logos/text-logo.svg" alt="Логотип Cat Energy текстовая надпись.">
     </a>
-    <button class="main-header__toggle" type="button">
+    <button class="main-header__toggle main-header__toggle--close" type="button">
       <span class="visually-hidden">Открыть меню.</span>
     </button>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--with-background site-list__link--active">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">
+          <a class="site-list__link site-list__link--with-background" href="catalog.html">
             Каталог продукции
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">
+          <a class="site-list__link site-list__link--with-background" href="form.html">
             Подбор программы
           </a>
         </li>
@@ -110,51 +110,55 @@
         </li>
       </ul>
     </section>
-    <section class="before-after">
-      <div class="before-after__half">
-        <h2 class="before-after__title">Живой пример</h2>
-        <p class="before-after__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день. </p>
-        <div class="before-after__wrapper">
-          <ul class="before-after-list">
-            <li class="before-after-list__item">
-              <span class="before-after-list__value">5 КГ</span>
-              <span class="before-after-list__title">снижение веса</span>
-            </li>
-            <li class="before-after-list__item">
-              <span class="before-after-list__value">60 ДНЕЙ</span>
-              <span class="before-after-list__title">затрачено времени</span>
-            </li>
-          </ul>
-          <p class="before-after__price">
-            <span class="before-after__price-item">Затраты на питание:</span>
-            <span class="before-after__price-value">15000 РУБ.</span>
-          </p>
-        </div>
-      </div>
-      <div class="comparison">
-        <img class="comparison__fat-cat" src="./img/largepic/index-fat-cat-mobile.png"
-          alt="Толстый кот до корма Cat Energy.">
-        <img class="comparison__thin-cat" src="" alt="Худой кот после корма Cat Energy.">
-        <div class="range">
-          <button class="range__button" type="button">Было</button>
-          <div class="range__scale">
-            <span class="range__bar"></span>
-          </div>
-          <button class="range__button" type="button">Стало</button>
-        </div>
-      </div>
-    </section>
-    <section class="contacts">
-      <h2 class="visually-hidden">Наш адрес.</h2>
-      <div class="contacts__wrapper">
-        <p class="contacts__title">Приглашаем <br>к сотрудничеству<br>дилеров!</p>
-        <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
-      </div>
-      <img class="contacts__map-google" src="./img/largepic/location-mobile.jpg" alt="Карта с расположением магазина.">
-    </section>
   </main>
+  <section class="before-after">
+    <div class="before-after__half">
+      <h2 class="before-after__title">Живой пример</h2>
+      <p class="before-after__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+        16 часов в день. </p>
+      <div class="before-after__wrapper">
+        <ul class="before-after-list">
+          <li class="before-after-list__item">
+            <span class="before-after-list__value">5 КГ</span>
+            <span class="before-after-list__title">снижение веса</span>
+          </li>
+          <li class="before-after-list__item">
+            <span class="before-after-list__value">60 ДНЕЙ</span>
+            <span class="before-after-list__title">затрачено времени</span>
+          </li>
+        </ul>
+        <p class="before-after__price">
+          <span class="before-after__price-item">Затраты на питание:</span>
+          <span class="before-after__price-value">15000 РУБ.</span>
+        </p>
+      </div>
+    </div>
+    <div class="comparison">
+      <img class="comparison__fat-cat" src="./img/largepic/index-fat-cat-mobile.png"
+        alt="Толстый кот до корма Cat Energy.">
+      <img class="comparison__thin-cat" src="" alt="Худой кот после корма Cat Energy.">
+      <div class="range">
+        <button class="range__button" type="button">Было</button>
+        <div class="range__scale">
+          <span class="range__bar"></span>
+        </div>
+        <button class="range__button" type="button">Стало</button>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <h2 class="visually-hidden">Наш адрес.</h2>
+    <div class="contacts__wrapper">
+      <p class="contacts__title">Приглашаем <br>к сотрудничеству<br>дилеров!</p>
+      <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br><br>Санкт-Петербург</p>
+    </div>
+    <iframe class="contacts__map-google-
+    interactive"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+      allowfullscreen title="0"></iframe>
+    <img class="contacts__map-google" src="./img/largepic/location-mobile.jpg" alt="Карта с расположением магазина.">
+  </section>
   <footer class="main-footer">
     <a class="main-footer__logo">
       <img class="main-footer__logo-text" src="img/logos/text-logo.svg" width="128" height="24"
@@ -164,16 +168,19 @@
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           <p class="visually-hidden">Мы в Вконтакте.</p>
+          <img src=".//img/icons/vk.svg">
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <p class="visually-hidden">Мы в Ютубе.</p>
+          <img src=".//img/icons/youtube.svg">
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
           <p class="visually-hidden">Мы в Телеграме.</p>
+          <img src=".//img/icons/telegram.svg">
         </a>
       </li>
     </ul>
@@ -187,6 +194,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
