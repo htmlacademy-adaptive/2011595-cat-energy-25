@@ -7,6 +7,15 @@
     display: flex;
     gap: 35px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 68px;
+    z-index: 5;
+    background: $white;
+    left: 0;
+    right: 20px;
+  }
 }
 
 .site-list__item {
@@ -32,8 +41,11 @@
   padding: 22px 0 24px 0;
   position: relative;
   border-top: 1px solid #e6e6e6;
-  margin-left: -20px;
   margin-right: -20px;
+
+  @media (max-width: $mobile-width-only) {
+    background: $white;
+  }
 
   @media (min-width: $tablet-width) {
     border: 0;

@@ -38,6 +38,7 @@
   display: flex;
   width: 100%;
   margin-bottom: 13px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -132,6 +133,20 @@
     height: 52px;
   }
 
+  &::placeholder {
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $dark-grey;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
   &--comment {
     min-height: 150px;
     margin-top: 3px;
@@ -142,19 +157,13 @@
       margin-bottom: 65px;
     }
   }
+}
 
-  &::placeholder {
-    padding-left: 15px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: $dark-grey;
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-    }
-  }
+.form__input-img {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
 }
 
 .form__button {
