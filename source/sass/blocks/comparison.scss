@@ -15,3 +15,15 @@
   display: block;
   margin: 0 auto;
 }
+
+.comparison__thin-cat {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.comparison__group {
+  display: flex;
+}

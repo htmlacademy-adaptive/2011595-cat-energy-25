@@ -12,11 +12,20 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logos/logo.svg"
-        alt="Логотип Cat Energy картинка рыжего кота в плаще.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logos/logo-desktop.svg" width="202" height="59">
+        <source media="(min-width: 768px)" srcset="img/logos/logo-tablet.svg" width="174" height="52">
+        <img class="main-header__logo-image" src="img/logos/logo.svg"
+          alt="Логотип Cat Energy картинка рыжего кота в плаще." width="33" height="38">
+      </picture>
     </a>
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-text" src="img/logos/text-logo.svg" alt="Логотип Cat Energy текстовая надпись.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logos/text-logo.svg" width="0" height="0">
+        <source media="(min-width: 768px)" srcset="img/logos/text-logo.svg" width="0" height="0">
+        <img class="main-header__logo-text" src="img/logos/text-logo.svg" alt="Логотип Cat Energy текстовая надпись."
+          width="101" height="18">
+      </picture>
     </a>
     <button class="main-header__toggle main-header__toggle--close" type="button">
       <span class="visually-hidden">Открыть меню.</span>

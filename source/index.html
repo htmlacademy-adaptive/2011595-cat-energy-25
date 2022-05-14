@@ -7,16 +7,28 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logos/logo.svg"
-        alt="Логотип Cat Energy картинка рыжего кота в плаще.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logos/logo-desktop.svg" width="202" height="59">
+        <source media="(min-width: 768px)" srcset="img/logos/logo-tablet.svg" width="174" height="52">
+        <img class="main-header__logo-image" src="img/logos/logo.svg"
+          alt="Логотип Cat Energy картинка рыжего кота в плаще." width="33" height="38">
+      </picture>
     </a>
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-text" src="img/logos/text-logo.svg" alt="Логотип Cat Energy текстовая надпись.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logos/text-logo.svg" width="0" height="0">
+        <source media="(min-width: 768px)" srcset="img/logos/text-logo.svg" width="0" height="0">
+        <img class="main-header__logo-text" src="img/logos/text-logo.svg" alt="Логотип Cat Energy текстовая надпись."
+          width="101" height="18">
+      </picture>
     </a>
     <button class="main-header__toggle main-header__toggle--close" type="button">
       <span class="visually-hidden">Открыть меню.</span>
@@ -45,9 +57,14 @@
     <section class="offer">
       <h1 class="offer__title">Функциональное <br>питание для котов</h1>
       <p class="offer__intro">Занялся собой? Займись котом!</p>
-      <img class="offer__image" src="./img/largepic/index-chichen-mobile.png"
-        alt="Упаковка корма Cat Energy со вкусом курицы.">
-
+      <picture>
+        <source media="(min-width: 1440px)"
+          srcset="./img/largepic/index-chichen-desktop.png 1x, ./img/largepic/index-chichen-desktop@2x.png 2x">
+        <source media="(min-width: 768px)"
+          srcset="./img/largepic/index-chichen-tablet.png 1x, ./img/largepic/index-chichen-tablet@2x.png 2x">
+        <img class="offer__image" src="./img/largepic/index-chichen-mobile.png"
+          srcset="./img/largepic/index-chichen-mobile@2x.png 2x" alt="Упаковка корма Cat Energy со вкусом курицы.">
+      </picture>
       <a class="offer__button" href="form.html">
         Подобрать программу
       </a>
@@ -135,9 +152,24 @@
       </div>
     </div>
     <div class="comparison">
-      <img class="comparison__fat-cat" src="./img/largepic/index-fat-cat-mobile.png"
-        alt="Толстый кот до корма Cat Energy.">
-      <img class="comparison__thin-cat" src="" alt="Худой кот после корма Cat Energy.">
+      <div class="comparison__group">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="./img/largepic/index-fat-cat-desktop.png 1x, ./img/largepic/index-fat-cat-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/largepic/index-fat-cat-tablet.png 1x, ./img/largepic/index-fat-cat-tablet@2x.png 2x">
+          <img class="comparison__fat-cat" src="./img/largepic/index-fat-cat-mobile.png"
+            srcset="./img/largepic/index-fat-cat-mobile@2x.png 2x" alt="Толстый кот до корма Cat Energy.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="./img/largepic/index-thin-cat-desktop.png, ./img/largepic/index-thin-cat-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/largepic/index-thin-cat-tablet.png 1x, ./img/largepic/index-thin-cat-tablet@2x.png 2x">
+          <img class="comparison__thin-cat" src="./img/largepic/index-thin-cat-tablet.png"
+            srcset="./img/largepic/index-thin-cat-tablet@2x.png 2x" alt="Худой кот после корма Cat Energy.">
+        </picture>
+      </div>
       <div class="range">
         <button class="range__button" type="button">Было</button>
         <div class="range__scale">

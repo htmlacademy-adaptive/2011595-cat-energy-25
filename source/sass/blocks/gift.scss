@@ -40,13 +40,41 @@
     background-size: cover;
     background-position: center;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background/gift-background-mobile@2x.jpg")
+        no-repeat $green;
+      background-size: cover;
+      background-position: center;
+    }
+
     @media (min-width: $tablet-width) {
       min-height: 200px;
-      background-position: 50% 60%;
+      background: url("../../img/background/gift-background-tablet.jpg")
+        no-repeat $green;
+      background-size: cover;
+      background-position: center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/background/gift-background-tablet@2x.jpg")
+          no-repeat $green;
+        background-size: cover;
+        background-position: center;
+      }
     }
 
     @media (min-width: $desktop-width) {
       min-height: 289px;
+      background: url("../../img/background/gift-background-desktop.jpg")
+        no-repeat $green;
+      background-size: cover;
+      background-position: center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/background/gift-background-desktop@2x.jpg")
+          no-repeat $green;
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 
