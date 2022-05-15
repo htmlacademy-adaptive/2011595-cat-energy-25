@@ -30,6 +30,7 @@
 
   @media (min-width: $tablet-width) {
     max-height: 72px;
+    padding: 14px 8px 17px 10px;
   }
 }
 
@@ -54,13 +55,19 @@
   background-color: #eaeaea;
   display: block;
   align-self: center;
+  width: 90%;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
-    margin-top: 12px;
+    margin-top: 10px;
     display: block;
     width: 142px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 11px;
+    background-color: #eaeaea;
   }
 }

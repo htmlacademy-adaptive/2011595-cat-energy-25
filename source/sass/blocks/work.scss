@@ -4,20 +4,20 @@
 
 .work__title {
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 42px 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 0;
+    margin: 15px 0 35px 0;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 26px 0;
+    margin: 0 0 35px 0;
     font-size: 60px;
     line-height: 60px;
   }

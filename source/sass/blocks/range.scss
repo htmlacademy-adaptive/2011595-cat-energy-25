@@ -1,12 +1,18 @@
 .range {
-  margin: 0 auto;
+  margin: 21px auto 0 auto;
   text-align: center;
   display: flex;
-  padding: 0 35px 0 35px;
+  padding: 0 40px 0 40px;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 0 60px 0 60px;
+    padding: 0 67px 0 71px;
+    margin: 31px auto 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 9px 0 31px;
+    margin: 31px auto 0 auto;
   }
 }
 
@@ -24,6 +30,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted rgba($color: #000000, $alpha: 0.24);
   }
 }
 
@@ -39,7 +46,7 @@
   @media (min-width: $tablet-width) {
     background: #dcdcdc;
     border: 0;
-    max-width: calc(42600% / 592);
+    max-width: calc(44400% / 592);
     height: 6px;
     top: 12px;
   }
@@ -50,7 +57,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-48%, -50%);
     width: 34px;
     height: 34px;
     border-radius: 50%;

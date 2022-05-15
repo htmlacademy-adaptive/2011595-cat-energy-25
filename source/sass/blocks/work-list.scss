@@ -1,23 +1,23 @@
 .work-list {
-  padding: 0 0 49px 0;
+  padding: 0 0 27px 0;
   margin: 0;
   list-style: none;
   position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 0;
   counter-reset: work;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     row-gap: 37px;
-    column-gap: calc(100% - 35% - 35% - 60px - 77px);
-    padding: 0 0 47px 0;
+    column-gap: calc(39% - 66px - 77px);
+    padding: 0 0 44px 0;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: space-between;
     flex-wrap: nowrap;
     column-gap: inherit;
     padding: 0 0 26px 0;
@@ -29,8 +29,10 @@
   display: flex;
   counter-increment: work;
   position: relative;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     min-height: 280px;
@@ -47,16 +49,17 @@
       color: $grey;
       z-index: -1;
       position: absolute;
-      left: 100px;
+      left: 115px;
+      top: -2px;
     }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 25%;
-    margin-right: 78px;
+    margin-right: 73px;
 
     &:nth-child(2n) {
-      margin-right: 77px;
+      margin-right: 72px;
     }
 
     &:last-child {
@@ -99,8 +102,22 @@
   color: $dark-grey;
   display: block;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
   }
 }

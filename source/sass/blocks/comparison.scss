@@ -2,18 +2,36 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
+    padding-top: 74px;
+    position: relative;
+    z-index: 5;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     width: 50%;
+    max-width: 613px;
   }
 }
 
 .comparison__fat-cat {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 26px;
+    left: 23px;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    clip: rect(auto, 285px, auto, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 26px;
+    left: 31px;
+  }
 }
 
 .comparison__thin-cat {
@@ -21,10 +39,31 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    position: absolute;
+    bottom: -1px;
+    left: -62px;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    clip: rect(auto, auto, auto, 295px);
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -1px;
+    left: -45px;
   }
 }
 
 .comparison__group {
   display: flex;
   justify-content: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 520px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 467px;
+  }
 }

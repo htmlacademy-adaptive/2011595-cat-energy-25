@@ -18,16 +18,16 @@
   background-color: $grey;
   display: block;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 315px 53px 52px;
+    padding: 77px 315px 57px 52px;
     margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 51px 55px 52px;
-    margin-bottom: 30px;
+    padding: 77px 51px 59px 52px;
+    margin-bottom: 71px;
     width: 50%;
   }
 }
@@ -65,7 +65,7 @@
   color: $dark-grey;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 48px 0;
+    margin: 0 0 52px 0;
     padding: 0;
     border: 0;
     font-size: 16px;
@@ -74,7 +74,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 23px 0;
+    margin: 0 0 27px 0;
     padding: 0;
   }
 }
@@ -96,12 +96,16 @@
   &::after {
     content: "";
     position: absolute;
-    right: -39px;
+    right: -40px;
     top: 50%;
     width: 24px;
     height: 12px;
     background: url("../../img/icons/arrow.svg") no-repeat center;
     transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      right: -50px;
+    }
   }
 }
 
@@ -117,6 +121,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 92px;
+    left: inherit;
     right: 62px;
     width: 200px;
     height: 200px;
@@ -137,15 +142,16 @@
 
 .offer-content-list__image {
   position: absolute;
-  top: 44%;
-  left: 50%;
   transform: translate(-50%, -50%);
 
   &--slim {
+    top: 44%;
+    left: 50%;
+
     @media (min-width: $tablet-width) {
       width: 140px;
       height: 194px;
-      top: 41%;
+      top: 43%;
     }
 
     @media (min-width: $desktop-width) {
@@ -155,6 +161,9 @@
   }
 
   &--power {
+    top: 49%;
+    left: 50%;
+
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 112px;
