@@ -149,9 +149,9 @@
   text-align: center;
   width: 100%;
   display: block;
-  padding: 11px 10px 7px 10px;
+  padding: 11px 10px 7px 11px;
   box-sizing: border-box;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 19px auto;
   height: 40px;
   font-size: 14px;
   line-height: 18px;
@@ -169,12 +169,12 @@
 }
 
 .offer__image {
-  display: block;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
+    display: block;
     z-index: 0;
     position: absolute;
     top: 265px;
@@ -182,6 +182,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     z-index: 2;
     position: absolute;
     top: 16%;
