@@ -5,11 +5,16 @@
 .checkbox-control__input {
   margin: 0;
   appearance: none;
-  width: 40px;
-  height: 40px;
   border-radius: 10%;
   border: 1px solid #cdcdcd;
   position: relative;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 
   &:checked::before {
     content: "";
@@ -37,6 +42,8 @@
   color: $black;
   align-self: center;
   margin-left: 16px;
+  position: relative;
+  bottom: 1px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

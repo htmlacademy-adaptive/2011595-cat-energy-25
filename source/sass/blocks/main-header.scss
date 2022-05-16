@@ -27,12 +27,30 @@
 }
 
 .main-header__logo-image {
-  visibility: visible;
+  width: 33px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .main-header__logo-text {
   padding-top: 5px;
   padding-right: 8px;
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 0;
+    height: 0;
+  }
 }
 
 .main-header__toggle {

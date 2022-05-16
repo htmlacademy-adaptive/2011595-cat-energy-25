@@ -155,7 +155,7 @@
   display: block;
   padding: 11px 10px 7px 11px;
   box-sizing: border-box;
-  margin: 0 auto 19px auto;
+  margin: 2px auto 19px auto;
   height: 40px;
   font-size: 14px;
   line-height: 18px;
@@ -181,6 +181,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  display: block;
 
   @media (min-width: $tablet-width) {
     display: block;

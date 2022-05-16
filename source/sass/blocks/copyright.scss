@@ -28,7 +28,10 @@
 }
 
 .copyright__link-logo {
+  padding-top: 2px;
+
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     align-self: center;
     margin-top: 7px;
   }
