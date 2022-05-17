@@ -4,13 +4,16 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 0 0 87px;
+    padding: 51px 0 0 87px;
     min-height: 810px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 111px 0 0 80px;
-    min-height: 473px;
+    padding: 100px 0 0 80px;
+    min-height: 454px;
+    position: static;
+    margin-bottom: 99px;
   }
 
   &::before {
@@ -27,6 +30,13 @@
     background-size: cover;
     background-position: center;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background/offer-background-mobile@2x.jpg")
+        no-repeat $green;
+      background-size: cover;
+      background-position: center;
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -38,6 +48,17 @@
       right: 0;
       z-index: 1;
       left: inherit;
+      background: url("../../img/background/offer-background-desktop.jpg")
+        no-repeat $green;
+      background-size: cover;
+      background-position: center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/background/offer-background-desktop@2x.jpg")
+          no-repeat $green;
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 
@@ -83,6 +104,8 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    margin: 0 0 41px 0;
+    max-width: 70%;
 
     br {
       display: none;
@@ -113,6 +136,11 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    margin: 0 0 49px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 51px 0;
   }
 }
 
@@ -125,9 +153,9 @@
   text-align: center;
   width: 100%;
   display: block;
-  padding: 11px 10px 7px 10px;
+  padding: 11px 10px 7px 11px;
   box-sizing: border-box;
-  margin: 0 auto 30px auto;
+  margin: 2px auto 19px auto;
   height: 40px;
   font-size: 14px;
   line-height: 18px;
@@ -135,20 +163,39 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 9px 26px 9px 26px;
+    padding: 17px 23px 9px 22px;
     width: 244px;
     margin: 0;
+    z-index: 2;
+    position: relative;
+    height: 54px;
+    left: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
   }
 }
 
 .offer__image {
-  display: block;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  display: block;
 
   @media (min-width: $tablet-width) {
-    z-index: -1;
+    display: block;
+    z-index: 0;
     position: absolute;
+    top: 252px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    top: 16%;
+    right: -16%;
   }
 }

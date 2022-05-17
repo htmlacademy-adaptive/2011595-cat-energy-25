@@ -1,10 +1,16 @@
 .copyright {
-  padding: 22px 0;
+  padding: 19px 0 22px 0;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     gap: 22px;
+    padding: 20px 0 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 22px;
+    padding: 24px 0 22px 0;
   }
 }
 
@@ -14,8 +20,19 @@
   font-size: 16px;
   line-height: 18px;
   font-family: $Arial;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     align-self: center;
+  }
+}
+
+.copyright__link-logo {
+  padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    align-self: center;
+    margin-top: 7px;
   }
 }

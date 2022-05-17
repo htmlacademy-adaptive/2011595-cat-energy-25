@@ -37,7 +37,8 @@
 .form__container {
   display: flex;
   width: 100%;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -49,7 +50,6 @@
   line-height: 18px;
   color: $dark-grey;
   text-transform: uppercase;
-  margin-right: 13px;
   align-self: center;
 
   @media (min-width: $tablet-width) {
@@ -99,7 +99,7 @@
 
 .form__wrapper-title {
   position: relative;
-  margin: 0 0 35px 0;
+  margin: 0 0 34px 0;
 
   &::before {
     content: "";
@@ -125,11 +125,27 @@
 .form__input {
   width: 100%;
   display: block;
-  height: 45px;
+  height: 40px;
   font-size: 20px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     height: 52px;
+  }
+
+  &::placeholder {
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    padding-left: 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $dark-grey;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &--comment {
@@ -141,20 +157,33 @@
       margin-top: 0;
       margin-bottom: 65px;
     }
-  }
 
-  &::placeholder {
-    padding-left: 15px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: $dark-grey;
+    &::placeholder {
+      font-family: "Oswald Regular", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: $dark-grey;
+      text-transform: uppercase;
+      padding-top: 9px;
 
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
+      @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
   }
+}
+
+input[type="nomber"] {
+  margin-left: 30px;
+}
+
+.form__input-img {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
 }
 
 .form__button {
@@ -170,8 +199,10 @@
   border: 0;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   min-height: 40px;
+  margin-top: 3px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
     padding: 14px;
@@ -201,4 +232,20 @@
     width: 100%;
     flex-direction: row;
   }
+}
+
+.form__input[type="text"] {
+  margin-left: 13px;
+}
+
+.form__input[type="number"] {
+  margin-left: 19px;
+}
+
+.form__input[type="email"] {
+  margin-left: 8px;
+}
+
+.form__input[type="tel"] {
+  margin-left: 8px;
 }
