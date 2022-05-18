@@ -1,5 +1,9 @@
 .checkbox-control {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    width: 221px;
+  }
 }
 
 .checkbox-control__input {
@@ -14,6 +18,7 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    top: -4px;
   }
 
   &:checked::before {
@@ -48,5 +53,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 19px;
+    bottom: 4px;
   }
 }

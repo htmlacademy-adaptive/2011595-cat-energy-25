@@ -14,12 +14,14 @@
     width: 100%;
     flex-direction: row;
     row-gap: 32px;
-    column-gap: calc(100% - 442px);
+    column-gap: calc(100% - 508px);
+    margin-right: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: calc(10400% / 1220);
+    column-gap: 9%;
     flex-wrap: nowrap;
+    margin-top: -16px;
   }
 }
 
