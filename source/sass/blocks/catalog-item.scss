@@ -170,6 +170,15 @@
     @media (min-width: $desktop-width) {
       top: 1px;
     }
+
+    &:hover {
+      background: #ebebeb;
+    }
+
+    &:active {
+      background: #ebebeb;
+      color: rgba($color: $black, $alpha: 0.3);
+    }
   }
 }
 

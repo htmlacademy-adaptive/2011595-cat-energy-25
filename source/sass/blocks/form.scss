@@ -168,6 +168,19 @@
   height: 40px;
   font-size: 20px;
   padding: 0;
+  border: 2px solid #e7e7e7;
+
+  &:invalid {
+    border: 2px solid rgba(255, 130, 130, 1);
+  }
+
+  &:invalid ~ svg path {
+    fill: rgba(255, 130, 130, 1);
+  }
+
+  &:hover {
+    border: 2px solid #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     height: 48px;
@@ -329,6 +342,7 @@
   margin-left: 16px;
   padding-left: 14px;
   padding-top: 1px;
+  appearance: textfield;
 
   @media (min-width: $tablet-width) {
     margin-left: 19px;
@@ -359,4 +373,10 @@
     padding-left: 18px;
     padding-top: 0;
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }

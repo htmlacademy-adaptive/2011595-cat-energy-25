@@ -45,3 +45,14 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    background: #5eaa2f;
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+}
