@@ -53,10 +53,21 @@ const optimizeImages = () => {
   .pipe(gulp.dest('build/img'));
   }
 
-export const copyImages = () => {
+  const optimizeImages2 = () => {
+    return gulp.src('source/img/favicons/*.svg')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img/favicons/'));
+    }
+
+const copyImages = () => {
     return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(gulp.dest('build/img'));
     }
+
+const copyImages2 = () => {
+      return gulp.src('source/img/favicons/*.svg')
+      .pipe(gulp.dest('build/img/favicons/'));
+      }
 
 // WebP
 
@@ -145,6 +156,7 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
+  optimizeImages2,
   gulp.parallel(
   styles,
   html,
@@ -162,6 +174,7 @@ export const build = gulp.series(
   clean,
   copy,
   copyImages,
+  copyImages2,
   gulp.parallel(
   styles,
   html,

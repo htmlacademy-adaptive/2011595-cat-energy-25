@@ -21,8 +21,8 @@
     position: absolute;
     min-height: 302px;
     width: 100%;
-    background: url("../../img/background/offer-background-mobile.jpg")
-      no-repeat $green;
+    background: url("../img/background/offer-background-mobile.jpg") no-repeat
+      $green;
     z-index: 0;
     top: 0;
     left: 0;
@@ -31,7 +31,7 @@
     background-position: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/background/offer-background-mobile@2x.jpg")
+      background-image: url("../img/background/offer-background-mobile@2x.jpg")
         no-repeat $green;
       background-size: cover;
       background-position: center;
@@ -48,13 +48,13 @@
       right: 0;
       z-index: 1;
       left: inherit;
-      background: url("../../img/background/offer-background-desktop.jpg")
+      background: url("../img/background/offer-background-desktop.jpg")
         no-repeat $green;
       background-size: cover;
       background-position: center;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/background/offer-background-desktop@2x.jpg")
+        background-image: url("../img/background/offer-background-desktop@2x.jpg")
           no-repeat $green;
         background-size: cover;
         background-position: center;
