@@ -3,6 +3,14 @@
   display: flex;
   justify-content: space-between;
 
+  &:hover .copyright__icon {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     gap: 22px;
     padding: 20px 0 22px 0;
@@ -21,9 +29,12 @@
   line-height: 18px;
   font-family: $Arial;
   align-self: center;
+  position: relative;
+  top: -2px;
 
   @media (min-width: $tablet-width) {
     align-self: center;
+    top: 0;
   }
 }
 
@@ -35,4 +46,8 @@
     align-self: center;
     margin-top: 7px;
   }
+}
+
+.copyright__icon {
+  fill: #666666;
 }

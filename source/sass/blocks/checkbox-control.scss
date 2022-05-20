@@ -15,6 +15,18 @@
   width: 30px;
   height: 30px;
 
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .checkbox-control__label {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;

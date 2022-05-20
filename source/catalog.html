@@ -10,6 +10,9 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="js/script.min.js" as="script">
 </head>
 
 <body class="page__body">
@@ -294,7 +297,7 @@
         <div class="catalog-item catalog-item--all">
           <h3 class="catalog-item__title catalog-item__title--all">Показать еще 100500 товаров</h3>
           <p class="catalog-item__description">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-item__order catalog-item__order--all" href="#">Показать еще</a>
+          <a class="catalog-item__order catalog-item__order--all" href="#">Показать все</a>
         </div>
       </li>
     </ul>
@@ -319,7 +322,7 @@
             <p class="additional-products-list-item__count">
               <span class="additional-products-list-item__price-count">5 литров</span>
               <span
-                class="additional-products-list-item__price additional-products-list-item__price--two-digit">&nbsp&nbsp50
+                class="additional-products-list-item__price additional-products-list-item__price--two-digit">&nbsp;&nbsp;50
                 Р.</span>
             </p>
             <a class="additional-products-list-item__order button" href="#">Заказать</a>
@@ -376,7 +379,7 @@
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           <p class="visually-hidden">Мы в Вконтакте.</p>
-          <svg width="27" height="17">
+          <svg class="social__icon" width="27" height="17">
             <use xlink:href="img/sprite.svg#icon-vk"></use>
           </svg>
         </a>
@@ -384,7 +387,7 @@
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <p class="visually-hidden">Мы в Ютубе.</p>
-          <svg width="24" height="19">
+          <svg class="social__icon" width="24" height="19">
             <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
         </a>
@@ -392,7 +395,7 @@
       <li class="social__item">
         <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
           <p class="visually-hidden">Мы в Телеграме.</p>
-          <svg width="20" height="17">
+          <svg class="social__icon" width="20" height="17">
             <use xlink:href="img/sprite.svg#icon-telegram"></use>
           </svg>
         </a>
@@ -401,13 +404,13 @@
     <div class="main-footer__copyright copyright">
       <a class="copyright__link" href="http://htmlacademy.ru">HTML Academy</a>
       <a class="copyright__link-logo" href="http://htmlacademy.ru" aria-label="Переход на сайт HTML Academy.">
-        <svg width="27" height="34">
+        <svg class="copyright__icon" width="27" height="34">
           <use xlink:href="img/sprite.svg#icon-html"></use>
         </svg>
       </a>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
