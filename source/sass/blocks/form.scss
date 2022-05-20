@@ -176,6 +176,7 @@
 
   &:focus ~ .form__input-img {
     fill: $green;
+    stroke: $green;
   }
 
   &:focus:invalid {
@@ -184,6 +185,7 @@
 
   &:focus:invalid ~ .form__input-img {
     fill: rgba(255, 130, 130, 1);
+    stroke: rgba(255, 130, 130, 1);
   }
 
   &:hover {
@@ -256,6 +258,7 @@
   right: 16px;
   transform: translateY(-50%);
   fill: #222222;
+  stroke: #222222;
 
   @media (min-width: $desktop-width) {
     top: 45%;
