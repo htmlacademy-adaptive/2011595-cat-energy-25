@@ -31,6 +31,15 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted rgba($color: #000000, $alpha: 0.24);
+
+    &:hover {
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+      padding-bottom: 1px;
+    }
   }
 }
 
@@ -64,6 +73,15 @@
     border: 1px solid #cdcdcd;
     background: $white;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+      border: 1px solid #68b738;
+    }
   }
 
   &::after {

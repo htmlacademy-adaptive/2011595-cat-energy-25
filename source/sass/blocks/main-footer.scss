@@ -31,4 +31,12 @@
 .main-footer__logo-text {
   margin: 0 auto;
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

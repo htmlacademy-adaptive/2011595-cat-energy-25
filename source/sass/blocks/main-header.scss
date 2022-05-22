@@ -24,6 +24,14 @@
 
 .main-header__logo {
   align-self: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo-image {
@@ -38,6 +46,14 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

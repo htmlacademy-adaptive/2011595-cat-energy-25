@@ -21,15 +21,18 @@
 }
 
 .social__link {
-  &--vkontakte {
-    visibility: visible;
+  visibility: visible;
+}
+
+.social__icon {
+  fill: #666666;
+
+  &:hover {
+    fill: $green;
   }
 
-  &--youtube {
-    visibility: visible;
-  }
-
-  &--telegram {
-    visibility: visible;
+  &:active {
+    fill: $green;
+    opacity: 0.3;
   }
 }

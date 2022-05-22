@@ -100,11 +100,21 @@
     top: 50%;
     width: 24px;
     height: 12px;
-    background: url("../../img/icons/arrow.svg") no-repeat center;
-    transform: translateY(-50%);
+    background: url("../img/icons/arrow.svg") no-repeat center;
+    transform: translateY(-50%) scaleX(1);
+    transform-origin: center left;
+    transition: transform 0.5s;
 
     @media (min-width: $tablet-width) {
       right: -50px;
+    }
+  }
+
+  &:hover {
+    &::after {
+      transform: translateY(-50%) scaleX(1.4);
+      transform-origin: center left;
+      transition: transform 0.5s;
     }
   }
 }
