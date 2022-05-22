@@ -28,7 +28,7 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-//html
+// html
 
 const html = () => {
   return gulp.src('source/*.html')
