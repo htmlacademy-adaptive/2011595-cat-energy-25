@@ -9,6 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    // 1220px общая ширина 2 блоков, 896px ширина ul
     width: calc(896 / 1220) * 100%;
     margin: 0 0 86px 0;
   }

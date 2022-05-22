@@ -3,14 +3,6 @@
   display: flex;
   justify-content: space-between;
 
-  &:hover .copyright__icon {
-    fill: $green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     gap: 22px;
     padding: 20px 0 22px 0;
@@ -19,6 +11,16 @@
   @media (min-width: $desktop-width) {
     gap: 22px;
     padding: 24px 0 22px 0;
+  }
+
+  &:hover {
+    .copyright__icon {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

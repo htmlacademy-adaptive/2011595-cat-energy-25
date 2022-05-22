@@ -124,13 +124,12 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: -12px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: end;
     font-size: 20px;
     line-height: 20px;
-    margin-top: -12px;
     min-width: 176px;
   }
 
@@ -155,10 +154,6 @@
     width: 128px;
     display: block;
   }
-}
-
-.before-after__price-item {
-  visibility: visible;
 }
 
 .before-after__wrapper {

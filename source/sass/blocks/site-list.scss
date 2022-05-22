@@ -3,15 +3,6 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    gap: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 35px;
-  }
-
   @media (max-width: $mobile-width-only) {
     position: absolute;
     top: 65px;
@@ -19,6 +10,15 @@
     background: $white;
     left: 0;
     right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 35px;
   }
 }
 
@@ -48,7 +48,7 @@
   margin-right: -20px;
 
   @media (max-width: $mobile-width-only) {
-    background: $white;
+    background-color: $white;
   }
 
   @media (min-width: $tablet-width) {
@@ -64,6 +64,14 @@
     line-height: 30px;
   }
 
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
+
   &--active {
     @media (min-width: $tablet-width) {
       text-decoration-line: underline;
@@ -73,25 +81,21 @@
     }
   }
 
-  &:hover {
-    color: rgba($color: $black, $alpha: 0.6);
-  }
-
-  &:active {
-    color: rgba($color: $black, $alpha: 0.3);
-  }
-
   &--with-background {
     @media (min-width: $desktop-width) {
       color: $white;
       text-decoration-color: $white;
+    }
 
-      &:hover {
-        color: rgba($color: $white, $alpha: 0.6);
+    &:hover {
+      @media (min-width: $desktop-width) {
+        color: rgba($white, 0.6);
       }
+    }
 
-      &:active {
-        color: rgba($color: $white, $alpha: 0.3);
+    &:active {
+      @media (min-width: $desktop-width) {
+        color: rgba($white, 0.3);
       }
     }
   }

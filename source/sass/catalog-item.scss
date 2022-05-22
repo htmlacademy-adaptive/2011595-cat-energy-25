@@ -95,10 +95,6 @@
     top: inherit;
   }
 
-  @media (min-width: $tablet-width) {
-    bottom: 0;
-  }
-
   @media (min-width: $desktop-width) {
     bottom: 8px;
   }
@@ -172,12 +168,12 @@
     }
 
     &:hover {
-      background: #ebebeb;
+      background-color: #ebebeb;
     }
 
     &:active {
-      background: #ebebeb;
-      color: rgba($color: $black, $alpha: 0.3);
+      background-color: #ebebeb;
+      color: rgba($black, 0.3);
     }
   }
 }

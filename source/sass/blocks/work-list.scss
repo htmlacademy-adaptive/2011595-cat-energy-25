@@ -102,21 +102,19 @@
   color: $dark-grey;
   display: block;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-
-    br {
-      display: block;
-    }
   }
 
-  @media (min-width: $desktop-width) {
-    br {
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
       display: none;
     }
   }
