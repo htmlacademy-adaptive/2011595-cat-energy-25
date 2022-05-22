@@ -29,6 +29,7 @@ export const styles = () => {
 
 // html
 
+
 const html = () => {
   return gulp.src('source/*.html')
   .pipe(gulp.dest('build'));
@@ -140,7 +141,6 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  optimizeFavicon,
   gulp.parallel(
   styles,
   html,
@@ -158,7 +158,6 @@ export const build = gulp.series(
   clean,
   copy,
   copyImages,
-  copyFavicon,
   gulp.parallel(
   styles,
   html,
