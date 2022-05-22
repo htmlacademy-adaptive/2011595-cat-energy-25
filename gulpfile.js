@@ -5,7 +5,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
@@ -32,9 +31,8 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin())
   .pipe(gulp.dest('build'));
-}
+  }
 
 // Scripts
 
@@ -54,31 +52,10 @@ const optimizeImages = () => {
   .pipe(gulp.dest('build/img'));
   }
 
-  const optimizeFavicon = () => {
-    return gulp.src('source/img/favicons/*.svg')
-    .pipe(svgo())
-    .pipe(gulp.dest('build/img/favicons/'));
-    }
-
 const copyImages = () => {
     return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(gulp.dest('build/img'));
     }
-
-const copyFavicon = () => {
-      return gulp.src('source/img/favicons/*.svg')
-      .pipe(gulp.dest('build/img/favicons/'));
-      }
-
-// WebP
-
-const createWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
-  .pipe(squoosh({
-  webp: {}
-  }))
-  .pipe(gulp.dest('build/img'))
-  }
 
   // SVG
 
@@ -101,6 +78,12 @@ inlineSvg: true
 .pipe(rename('sprite.svg'))
 .pipe(gulp.dest('build/img'));
 }
+
+const optimizeFavicon = () => {
+  return gulp.src('source/img/favicons/*.svg')
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img/favicons/'));
+  }
 
 // Copy
 
@@ -165,7 +148,7 @@ export const build = gulp.series(
   svg,
   svgLogos,
   sprite,
-  createWebp
+  optimizeFavicon
   ),
   );
 
@@ -183,7 +166,7 @@ export const build = gulp.series(
   svg,
   svgLogos,
   sprite,
-  createWebp
+  optimizeFavicon
   ),
   gulp.series(
   server,
