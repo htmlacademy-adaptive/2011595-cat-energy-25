@@ -140,6 +140,7 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
+  optimizeFavicon,
   gulp.parallel(
   styles,
   html,
@@ -157,6 +158,7 @@ export const build = gulp.series(
   clean,
   copy,
   copyImages,
+  copyFavicon,
   gulp.parallel(
   styles,
   html,
