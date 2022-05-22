@@ -11,37 +11,39 @@
   border: 1px solid #cdcdcd;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
   &:hover {
     border: 1px solid #bababa;
   }
 
   &:disabled {
     opacity: 0.3;
+
+    & ~ .radio-control__label {
+      opacity: 0.3;
+    }
   }
 
-  &:disabled ~ .radio-control__label {
-    opacity: 0.3;
-  }
+  &:checked {
+    ::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: $green;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
-  @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
-  }
-
-  &:checked::before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: $green;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    @media (min-width: $tablet-width) {
-      width: 18px;
-      height: 18px;
+      @media (min-width: $tablet-width) {
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }

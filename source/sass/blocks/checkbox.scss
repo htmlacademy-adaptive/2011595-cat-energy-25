@@ -10,12 +10,11 @@
   row-gap: 12px;
 
   @media (min-width: $tablet-width) {
-    margin: -19px 0 2px 0;
+    margin: -19px 66px 2px 0;
     width: 100%;
     flex-direction: row;
     row-gap: 32px;
     column-gap: calc(100% - 508px);
-    margin-right: 66px;
   }
 
   @media (min-width: $desktop-width) {

@@ -5,7 +5,6 @@
 @import "./blocks/additional-products";
 @import "./blocks/before-after-list";
 @import "./blocks/before-after";
-@import "./catalog-item";
 @import "./blocks/catalog";
 @import "./blocks/checkbox-control";
 @import "./blocks/checkbox";
@@ -16,14 +15,12 @@
 @import "./blocks/description-table";
 @import "./blocks/form-headline";
 @import "./blocks/form";
-@import "./gift";
 @import "./blocks/main-container";
 @import "./blocks/main-footer";
 @import "./blocks/main-header";
 @import "./blocks/main-nav";
 @import "./offer-content-list";
 @import "./blocks/offer-content";
-@import "./offer";
 @import "./blocks/page";
 @import "./blocks/radio-button";
 @import "./blocks/radio-control";
@@ -32,6 +29,9 @@
 @import "./blocks/social";
 @import "./blocks/work-list";
 @import "./blocks/work";
+@import "./catalog-item";
+@import "./gift";
+@import "./offer";
 
 .visually-hidden {
   position: absolute;
@@ -53,6 +53,6 @@
 
   &:active {
     background: #5eaa2f;
-    color: rgba($color: $white, $alpha: 0.3);
+    color: rgba($white, 0.3);
   }
 }

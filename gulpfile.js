@@ -54,9 +54,9 @@ const optimizeImages = () => {
   .pipe(gulp.dest('build/img'));
   }
 
-  const optimizeImages2 = () => {
+  const optimizeFavicon = () => {
     return gulp.src('source/img/favicons/*.svg')
-    .pipe(squoosh())
+    .pipe(svgo())
     .pipe(gulp.dest('build/img/favicons/'));
     }
 
@@ -65,7 +65,7 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'));
     }
 
-const copyImages2 = () => {
+const copyFavicon = () => {
       return gulp.src('source/img/favicons/*.svg')
       .pipe(gulp.dest('build/img/favicons/'));
       }
@@ -87,7 +87,7 @@ gulp.src(['source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img/icons/'));
 
-const svg2 = () =>
+const svgLogos = () =>
 gulp.src(['source/img/logos/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img/logos'));
@@ -157,13 +157,13 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  optimizeImages2,
+  optimizeFavicon,
   gulp.parallel(
   styles,
   html,
   scripts,
   svg,
-  svg2,
+  svgLogos,
   sprite,
   createWebp
   ),
@@ -175,13 +175,13 @@ export const build = gulp.series(
   clean,
   copy,
   copyImages,
-  copyImages2,
+  copyFavicon,
   gulp.parallel(
   styles,
   html,
   scripts,
   svg,
-  svg2,
+  svgLogos,
   sprite,
   createWebp
   ),

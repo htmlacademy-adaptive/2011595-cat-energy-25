@@ -4,8 +4,6 @@
 }
 
 .description-table__row {
-  visibility: visible;
-
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
     display: flex;

@@ -10,11 +10,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding: 0 110px 0 110px;
-      position: static;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 110px;
+    position: static;
   }
 }
 

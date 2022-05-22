@@ -78,15 +78,17 @@
     display: none;
   }
 
-  &--close::before {
-    content: "";
-    position: absolute;
-    top: 22px;
-    right: 20px;
-    width: 24px;
-    height: 2px;
-    background-color: $black;
-    box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  &--close {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 20px;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+      box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+    }
   }
 
   &--open {
