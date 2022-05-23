@@ -171,6 +171,11 @@
   &:focus {
     outline: 2px solid rgba(68, 68, 68, 1);
 
+    & ~ .form__input-img {
+      fill: $green;
+      stroke: $green;
+    }
+
     &:invalid {
       outline: 2px solid rgba(255, 130, 130, 1);
     }
@@ -179,11 +184,6 @@
       fill: rgba(255, 130, 130, 1);
       stroke: rgba(255, 130, 130, 1);
     }
-  }
-
-  & ~ .form__input-img {
-    fill: $green;
-    stroke: $green;
   }
 
   &:hover {

@@ -5,14 +5,14 @@
 .radio-control__input {
   margin: 0;
   appearance: none;
-  width: 30px;
+  min-width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
   }
 

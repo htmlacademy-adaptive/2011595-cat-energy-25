@@ -112,4 +112,16 @@
       box-shadow: none;
     }
   }
+
+  &--nojs {
+    &::before,
+    &::after {
+      content: none;
+      position: absolute;
+      top: 22px;
+      right: 20px;
+      width: 24px;
+      height: 2px;
+    }
+  }
 }
