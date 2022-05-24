@@ -18,8 +18,12 @@
   }
 
   &--nojs {
-    .main-header__toggle {
-      display: none;
+    .site-list {
+      @media (max-width: $mobile-width-only) {
+        display: block;
+        position: static;
+        margin-left: -20px;
+      }
     }
   }
 

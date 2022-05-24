@@ -33,9 +33,13 @@
           width="101" height="18">
       </picture>
     </a>
+    <!-- main-header__toggle--close main-header__toggle--open классы отвечающие за переключение вида кнопки -->
+    <!-- main-header__toggle--nojs класс отвечает за вид кнопки при отключеном JS-->
     <button class="main-header__toggle main-header__toggle--close main-header__toggle--nojs" type="button">
       <span class="visually-hidden">Открыть меню.</span>
     </button>
+    <!-- main-nav main-nav--closed main-nav main-nav--opened классы отвечающие за открытое и закрытое состояние меню -->
+    <!-- main-nav--nojs класс отвечает за установку меню в поток при отключеном JS-->
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="site-list">
         <li class="site-list__item">
@@ -49,7 +53,7 @@
           </a>
         </li>
         <li class="site-list__item ">
-          <a class="site-list__link site-list__link--active">
+          <a class="site-list__link site-list__link--active site-list__link--last-link">
             Подбор программы
           </a>
         </li>
