@@ -160,12 +160,15 @@
   width: 100%;
   display: block;
   height: 40px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 18px;
   padding: 0;
   border: 2px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     height: 48px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &:focus {
